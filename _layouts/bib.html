@@ -1,103 +1,81 @@
----
----
-<div class="container" style="max-width: 900px; margin: 0 auto;">
-
-<!-- 
-  {% if forloop.first %}
-  <div class="alert alert-info" style="margin-bottom: 24px;">
-    <span style="font-size: 1.1em;">Authors marked with <strong>*</strong> contributed equally to this work.</span>
-  </div>
-  {% endif %} -->
-  {% assign show_star_legend = false %}
-  {% for entry in site.scholar.bibliography %}
-    {% for author in entry.author_array %}
-      {% if author.last contains '*' %}
-        {% assign show_star_legend = true %}
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-
-  {% if show_star_legend %}
-    <div class="alert alert-info" style="margin-bottom: 24px;">
-      <span style="font-size: 1.1em;">Authors marked with <strong>*</strong> contributed equally to this work.</span>
+<li id="bib-{{ entry.key }}">
+  <div class="bib-entry-container">
+    {% assign icon_path = '/images/icons/' | append: entry.key | append: '.png' %}
+    <div class="bib-icon">
+      <img src="{{ icon_path }}" alt="{{ entry.key }} icon">
     </div>
-  {% endif %}
-
-<div class="bib-entry">
-  {% assign icon_path = '/images/icons/' | append: entry.key | append: '.png' %}
-  <div class="bib-icon">
-    <img src="{{ icon_path }}" alt="{{ entry.key }} icon">
-  </div>
-  <div class="bib-text">
-    {%- for author in entry.author_array %}
+    <div class="bib-number">[{{ forloop.index }}]</div>
+    <div class="bib-text">
+      {%- for author in entry.author_array %}
       {% assign full_name = author.first | append: " " | append: author.last | remove: '*' %}
       {% assign has_star = author.last contains '*' %}
       {% if full_name == "Sébastien Kleff" or full_name == "S{\'{e}}bastien Kleff" %}
-        <strong>{{author.first}} {{author.last | remove: '*'}}{% if author.last contains '*' %}<sup>*</sup>{% endif %}</strong>,
+      <strong>{{author.first}} {{author.last | remove: '*'}}{% if author.last contains '*' %}<sup>*</sup>{% endif
+        %}</strong>,
       {% else %}
-        {% assign first_name = author.first | split: " " %}
-        {% for n in first_name %}
-          {{n | truncate:1, ""}}.
-        {% endfor %}
-        {{author.last | remove: '*'}}{% if author.last contains '*' %}<sup>*</sup>{% endif %},
+      {% assign first_name = author.first | split: " " %}
+      {% for n in first_name %}
+      {{n | truncate:1, ""}}.
+      {% endfor %}
+      {{author.last | remove: '*'}}{% if author.last contains '*' %}<sup>*</sup>{% endif %},
       {% endif %}
-    {% endfor %}
+      {% endfor %}
 
-    {% if entry.title %}
-    "{{ entry.title }}",
-    {% endif %}
+      {% if entry.title %}
+      "{{ entry.title }}",
+      {% endif %}
 
-    {% if entry.type == "article" %}
-        <i>{{ entry.journal }}</i>,
-        {% if entry.volume %}vol. {{ entry.volume }},{% endif %}
-        {% if entry.number %}no. {{ entry.number }},{% endif %}
-    {% elsif entry.type == "inproceedings" %}
-        in <i>{{ entry.booktitle }}</i>,
-    {% endif %}
-    {% if entry.pages %}pp. {{ entry.pages }},{% endif %}
-    {% if entry.month %}{{ entry.month | capitalize }},{% endif %}
-    {% if entry.year %}{{ entry.year }}.{% endif %}
+      {% if entry.type == "article" %}
+      <i>{{ entry.journal }}</i>,
+      {% if entry.volume %}vol. {{ entry.volume }},{% endif %}
+      {% if entry.number %}no. {{ entry.number }},{% endif %}
+      {% elsif entry.type == "inproceedings" %}
+      in <i>{{ entry.booktitle }}</i>,
+      {% endif %}
+      {% if entry.pages %}pp. {{ entry.pages }},{% endif %}
+      {% if entry.month %}{{ entry.month | capitalize }},{% endif %}
+      {% if entry.year %}{{ entry.year }}.{% endif %}
 
-    <br>
+      <br>
 
-    {% if entry.abstract %}
+      {% if entry.paper_url %}
+      <a href="{{ entry.paper_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
+      </a>
+      {% endif %}
+
+      {% if entry.preprint_url %}
+      <a href="{{ entry.preprint_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Preprint
+      </a>
+      {% endif %}
+
+      {% if entry.video_url %}
+      <a href="{{ entry.video_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      {% endif %}
+
+      {% if entry.code_url %}
+      <a href="{{ entry.code_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Code
+      </a>
+      {% endif %}
+
+      {% if entry.abstract %}
       {% assign clean_abs = entry.abstract | remove: '"' %}
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="{{ clean_abs }}">
         Abs
       </button>
-    {% endif %}
+      {% endif %}
 
-    {% if entry.bibtex %}
-      <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="{{ entry.bibtex }}" data-bs-html="true">
+      {% if entry.bibtex %}
+      <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="{{ entry.bibtex }}"
+        data-bs-html="true">
         Bib
       </button>
-    {% endif %}
+      {% endif %}
 
-
-    {% if entry.video_url %}
-      <a href="{{ entry.video_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
-        Video
-      </a>
-    {% endif %}
-
-    {% if entry.code_url %}
-      <a href="{{ entry.code_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
-        Code
-      </a>
-    {% endif %}
-
-    {% if entry.paper_url %}
-      <a href="{{ entry.paper_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
-        Paper
-      </a>
-    {% endif %}
-
-    {% if entry.preprint_url %}
-      <a href="{{ entry.preprint_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
-        Preprint
-      </a>
-    {% endif %}
-
+    </div>
   </div>
-</div>
-</div>
+</li>
