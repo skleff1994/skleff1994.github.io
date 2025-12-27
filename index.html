@@ -169,6 +169,9 @@
             
             <li class="masthead__menu-item"><a href="https://skleff1994.github.io/cv-page/">CV</a></li>
           
+            
+            <li class="masthead__menu-item"><a href="https://skleff1994.github.io/software/">Software</a></li>
+          
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
@@ -311,7 +314,8 @@
 
 <h1 id="research">Research</h1>
 
-<p>My main scientific objective is to endow modern robots with the ability to physically interact with uncertain environments. This ability is crucial in order to assist humans in manual labor, where physical contact is ubiquitous. More specifically, my goal is to design safe, robust and adaptive control architectures that exploit multiple sensory modalities, such as the sense of touch, in order to reason and make online decision in dynamic and changing workspaces.</p>
+<p>My main scientific objective is to endow modern robots with the ability to physically interact with uncertain environments. This ability is crucial in order to deploy robots in the real world (e.g. assist humans in manual labor), where physical contact is ubiquitous. 
+<!-- More specifically, my goal is to design safe, robust and adaptive control architectures that exploit multiple sensory modalities, such as the sense of touch, in order to reason and make online decision in dynamic and changing workspaces. --></p>
 
 <!-- My research lies at the intersection of model-predictive control (MPC), human-robot collaboration and physical interaction control. My doctoral research, conducted jointly at the <a href="https://wp.nyu.edu/machinesinmotion/" target="_blank" rel="noopener noreferrer">Machines in Motion Laboratory</a> and <a href="https://gepettoweb.laas.fr/" target="_blank" rel="noopener noreferrer">LAAS-CNRS</a> focused on leveraging force sensing in MPC for robotic motion generation. I also developed software and numerical tools, and more generally I contributed to the development of nonlinear MPC on torque-control robots. 
 
@@ -319,15 +323,21 @@ Currently, I am working toward integrating tactile feedback and robust MPC metho
 
 <div class="row align-items-top justify-content-around" style="margin-top: 30px;">
   <div class="col-sm-12 col-md-6 col-lg-3 text-center" style="padding-bottom: 30px">
+    <a href="/research/force-control/">
+      <img src="/images/research/force_control.png" alt="Force Control" class="img-fluid" style="width:220px; height:170px; border-radius: 1px;" />
+      <div style="font-size: 1.1rem; margin-top: 10px;">Force Control</div>
+    </a>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-3 text-center" style="padding-bottom: 30px">
     <a href="/research/mpc/">
       <img src="/images/research/mpc.png" alt="Model Predictive Control" class="img-fluid" style="width:220px; height:170px; border-radius: 1px;" />
       <div style="font-size: 1.1rem; margin-top: 10px;">Model Predictive Control</div>
     </a>
   </div>
   <div class="col-sm-12 col-md-6 col-lg-3 text-center" style="padding-bottom: 30px">
-    <a href="/research/force-control/">
-      <img src="/images/research/force_control.png" alt="Force Control" class="img-fluid" style="width:220px; height:170px; border-radius: 1px;" />
-      <div style="font-size: 1.1rem; margin-top: 10px;">Force Control</div>
+    <a href="/research/tactile-hrc/">
+      <img src="/images/research/tactile_hrc.png" alt="Tactile Control" class="img-fluid" style="width:220px; height:170px; border-radius: 1px;" />
+      <div style="font-size: 1.1rem; margin-top: 10px;">Tactile Control</div>
     </a>
   </div>
   <!-- <div class="col-sm-12 col-md-6 col-lg-3 text-center" style="padding-bottom: 30px">
@@ -336,16 +346,11 @@ Currently, I am working toward integrating tactile feedback and robust MPC metho
       <div style="font-size: 1.1rem; margin-top: 10px;">Robust Motion Planning</div>
     </a>
   </div> -->
-  <div class="col-sm-12 col-md-6 col-lg-3 text-center" style="padding-bottom: 30px">
-    <a href="/research/tactile-hrc/">
-      <img src="/images/research/tactile_hrc.png" alt="Tactile Control" class="img-fluid" style="width:220px; height:170px; border-radius: 1px;" />
-      <div style="font-size: 1.1rem; margin-top: 10px;">Tactile Control</div>
-    </a>
-  </div>
 </div>
 
-<h1 id="software">Software</h1>
-<p>I am one of the main developers and managers of the <a href="https://github.com/machines-in-motion/mim_solvers" target="_blank" rel="noopener noreferrer">mim_solvers</a> library (with <a href="https://scholar.google.com/citations?user=zLICCioAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Armand Jordana</a> and <a href="https://scholar.google.com/citations?user=DsGVfRwAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Avadesh Meduri</a>), an efficient numerical optimization solver tailored for nonlinear Model-Predictive Control, compatible with the <a href="https://github.com/loco-3d/crocoddyl" target="_blank" rel="noopener noreferrer">Crocoddyl</a> library.</p>
+<!-- Software
+======
+I am one of the main developers and managers of the <a href="https://github.com/machines-in-motion/mim_solvers" target="_blank" rel="noopener noreferrer">mim_solvers</a> library, an efficient numerical optimization solver tailored for nonlinear Model-Predictive Control, compatible with the <a href="https://github.com/loco-3d/crocoddyl" target="_blank" rel="noopener noreferrer">Crocoddyl</a> library. -->
 
 <!-- I also contributed to the development and democratization of nonlinear MPC in the robotics community through the <a href="https://github.com/machines-in-motion/croco_mpc_utils" target="_blank" rel="noopener noreferrer">croco_mpc_utils</a> plugin, which enables to quickly prototype Optimal Control Problems in Crocoddyl through templated configuration files and to visualize their solutions. I also contributed to the <a href="https://github.com/loco-3d/crocoddyl" target="_blank" rel="noopener noreferrer">Crocoddyl</a> library by implementing constrained forward dynamics derivatives in moving coordinates. -->
 
