@@ -73,13 +73,31 @@
       </button>
     {% endif %}
 
-    <a href="{{ '/' | append: entry.key | append: '.html' | relative_url }}" class="btn_bib btn btn-sm">Details</a>
 
-    {% if entry.url %}
-      <a href="{{ entry.url }}">
-        <i class="bi bi-link-45deg"></i>
+    {% if entry.video_url %}
+      <a href="{{ entry.video_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
       </a>
     {% endif %}
+
+    {% if entry.code_url %}
+      <a href="{{ entry.code_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Code
+      </a>
+    {% endif %}
+
+    {% if entry.paper_url %}
+      <a href="{{ entry.paper_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
+      </a>
+    {% endif %}
+
+    {% if entry.preprint_url %}
+      <a href="{{ entry.preprint_url }}" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Preprint
+      </a>
+    {% endif %}
+
   </div>
 </div>
 </div>

@@ -1,126 +1,122 @@
-@ARTICLE{JordanaSQP,
-  author={Armand Jordana* and Sébastien Kleff* and Avadesh Meduri* and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
-  journal={IEEE Transactions on Robotics}, 
-  title={Structure-Exploiting Sequential Quadratic Programming for Model-Predictive Control}, 
-  year={2025},
-  volume={41},
-  number={},
-  pages={4960-4974},
-  keywords={Robots;Optimization;Heuristic algorithms;Convergence;Optimal control;Quadratic programming;Predictive control;Newton method;Vectors;Standards;Motion and path planning;model-predictive control;optimization and optimal control;reactive and sensor-based planning},
-  doi={10.1109/TRO.2025.3595674},
-  abstract={The promise of model-predictive control (MPC) in robotics has led to extensive development of efficient numerical optimal control solvers in line with differential dynamic programming because it exploits the sparsity induced by time. In this work, we argue that this effervescence has hidden the fact that sparsity can be equally exploited by standard nonlinear optimization. In particular, we show how a tailored implementation of sequential quadratic programming (QP) achieves state-of-the-art MPC. Then, we clarify the connections between popular algorithms from the robotics community and well-established optimization techniques. Further, the sequential quadratic program formulation naturally encompasses the constrained case, a notoriously difficult problem in the robotics community. Specifically, we show that it only requires a sparsity-exploiting implementation of a state-of-the-art QP solver. We illustrate the validity of this approach in a comparative study and experiments on a torque-controlled manipulator. To the best of our knowledge, this is the first demonstration of closed loop nonlinear MPC with constraints on a real robot.}}
-
-@article{KleffTRO,
-author = {S{\'{e}}bastien Kleff and Armand Jordana and Mansard, Nicolas and Righetti, Ludovic},
-title = {{Force Feedback Model Predictive Control: A Soft Contact Approach}},
-journal = {Submitted to T-RO (Under review)},
-year = {2025},
-abstract={Model-predictive control is an appealing framework to control robots due to its ability to exploit both sensory information and model predictions. But its performance remains fundamentally limited in tasks involving contact with the environment, in part because optimal control policies do not reason over force measurements. In this article, we propose a first complete answer to this issue by introducing a novel approach to perform force feedback in model-predictive control. We propose to augment the state-space with a visco-elastic model of the contact force in the task space in order to systematically include measured efforts into the optimal control loop. We derive a complete predictive controller with an efficient formulation whose implementation is released in open-source. We demonstrate through simulation studies and hardware experiments that our approach enables to combine the benefits of force control and model-predictive control within a single architecture, thereby outperforming existing approaches in challenging contact tasks.}
+@article{JordanaSQP,
+  author    = {Armand Jordana* and Sébastien Kleff* and Avadesh Meduri* and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
+  journal   = {IEEE Transactions on Robotics},
+  title     = {Structure-Exploiting Sequential Quadratic Programming for Model-Predictive Control},
+  year      = {2025},
+  keywords  = {Robots;Optimization;Heuristic algorithms;Convergence;Optimal control;Quadratic programming;Predictive control;Newton method;Vectors;Standards;Motion and path planning;model-predictive control;optimization and optimal control;reactive and sensor-based planning},
+  doi       = {10.1109/TRO.2025.3595674},
+  paper_url = {https://doi.org/10.1109/TRO.2025.3595674},
+  code_url  = {https://github.com/machines-in-motion/mim_solvers},
+  abstract  = {The promise of model-predictive control (MPC) in robotics has led to extensive development of efficient numerical optimal control solvers in line with differential dynamic programming because it exploits the sparsity induced by time. In this work, we argue that this effervescence has hidden the fact that sparsity can be equally exploited by standard nonlinear optimization. In particular, we show how a tailored implementation of sequential quadratic programming (QP) achieves state-of-the-art MPC. Then, we clarify the connections between popular algorithms from the robotics community and well-established optimization techniques. Further, the sequential quadratic program formulation naturally encompasses the constrained case, a notoriously difficult problem in the robotics community. Specifically, we show that it only requires a sparsity-exploiting implementation of a state-of-the-art QP solver. We illustrate the validity of this approach in a comparative study and experiments on a torque-controlled manipulator. To the best of our knowledge, this is the first demonstration of closed loop nonlinear MPC with constraints on a real robot.}
 }
 
-@ARTICLE{JordanaValue2025,
-  author={Jordana, Armand and Kleff, Sébastien and Haffemayer, Arthur and Ortiz-Haro, Joaquim and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
-  journal={IEEE Robotics and Automation Letters}, 
-  title={Infinite-Horizon Value Function Approximation for Model Predictive Control}, 
-  year={2025},
-  volume={10},
-  number={7},
-  pages={7563-7570},
-  keywords={Infinite horizon;Function approximation;Robots;Training;Mathematical models;Costs;Cost function;Trajectory optimization;Safety;Predictive control;Optimization and optimal control;machine learning for robot control},
-  doi={10.1109/LRA.2025.3577875},
-  abstract={Model Predictive Control has emerged as a popular tool for robots to generate complex motions. However, the real-time requirement has limited the use of hard constraints and large preview horizons, which are necessary to ensure safety and stability. In practice, practitioners have to carefully design cost functions that can imitate an infinite horizon formulation, which is tedious and often results in local minima. In this work, we study how to approximate the infinite horizon value function of constrained optimal control problems with neural networks using value iteration and trajectory optimization. Furthermore, we experimentally demonstrate how using this value function approximation as a terminal cost provides global stability to the model predictive controller. The approach is validated on two toy problems and a real-world scenario with online obstacle avoidance on an industrial manipulator where the value function is conditioned to the goal and obstacle.},
+@article{KleffTRO,
+  author   = {S{\'{e}}bastien Kleff and Armand Jordana and Mansard, Nicolas and Righetti, Ludovic},
+  title    = {{Force Feedback Model Predictive Control: A Soft Contact Approach}},
+  journal  = {Preprint},
+  year     = {2025},
+  abstract = {Model-predictive control is an appealing framework to control robots due to its ability to exploit both sensory information and model predictions. But its performance remains fundamentally limited in tasks involving contact with the environment, in part because optimal control policies do not reason over force measurements. In this article, we propose a first complete answer to this issue by introducing a novel approach to perform force feedback in model-predictive control. We propose to augment the state-space with a visco-elastic model of the contact force in the task space in order to systematically include measured efforts into the optimal control loop. We derive a complete predictive controller with an efficient formulation whose implementation is released in open-source. We demonstrate through simulation studies and hardware experiments that our approach enables to combine the benefits of force control and model-predictive control within a single architecture, thereby outperforming existing approaches in challenging contact tasks.}
+}
+
+@article{JordanaValue2025,
+  author    = {Jordana, Armand and Kleff, Sébastien and Haffemayer, Arthur and Ortiz-Haro, Joaquim and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
+  journal   = {IEEE Robotics and Automation Letters},
+  title     = {Infinite-Horizon Value Function Approximation for Model Predictive Control},
+  year      = {2025},
+  keywords  = {Infinite horizon;Function approximation;Robots;Training;Mathematical models;Costs;Cost function;Trajectory optimization;Safety;Predictive control;Optimization and optimal control;machine learning for robot control},
+  doi       = {10.1109/LRA.2025.3577875},
+  paper_url = {https://doi.org/10.1109/LRA.2025.3577875},
+  video_url = {https://youtu.be/example_video_placeholder},
+  abstract  = {Model Predictive Control has emerged as a popular tool for robots to generate complex motions. However, the real-time requirement has limited the use of hard constraints and large preview horizons, which are necessary to ensure safety and stability. In practice, practitioners have to carefully design cost functions that can imitate an infinite horizon formulation, which is tedious and often results in local minima. In this work, we study how to approximate the infinite horizon value function of constrained optimal control problems with neural networks using value iteration and trajectory optimization. Furthermore, we experimentally demonstrate how using this value function approximation as a terminal cost provides global stability to the model predictive controller. The approach is validated on two toy problems and a real-world scenario with online obstacle avoidance on an industrial manipulator where the value function is conditioned to the goal and obstacle.}
 }
 
 @article{KleffRobotica20,
-author = {S{\'{e}}bastien Kleff and Li, Ning},
-doi = {10.1017/S0263574719001905},
-journal = {Robotica},
-keywords = {Hamilton-Jacobi-Isaacs Equation,Reach-avoid game,Reachability analysis,Robust motion planning,Sampled-data system},
-number = {12},
-title = {{Robust Motion Planning in Dynamic Environments Based on Sampled-Data Hamilton-Jacobi Reachability}},
-volume = {38},
-year = {2020},
-abstract={We propose a novel formal approach to robust motion planning (MP) in dynamic environments based on reachability analysis. While traditional MP methods usually fail to provide formal robust safety and performance guarantees, our approach provably ensures safe task achievement in time-varying and adversarial environments under parametric uncertainty. We leverage recent results on Hamilton–Jacobi (HJ) reachability and differential games in order to compute offline guaranteed motion plans that are compatible with the sampled-data (SD) paradigm. Also, we synthesize online provably robust safety-preserving and target-reaching feedback controls. Unlike earlier applications of reachability analysis to MP, our methodology handles arbitrary time-varying constraints, adversarial agents such as pursuing obstacles or evading targets, and takes into account the robot’s configuration. Furthermore, we use HJ projections in order to reduce significantly the computational burden without trading off safety guarantees. The validity of this approach is demonstrated through the case study of a robot arm subject to measurement errors, which is tasked with safely reaching a goal in a known time-varying workspace while avoiding capture by an unpredictable pursuer. Finally, the performance of the approach and research perspectives are discussed.}
+  author   = {S{\'{e}}bastien Kleff and Li, Ning},
+  doi      = {10.1017/S0263574719001905},
+  journal  = {Robotica},
+  keywords = {Hamilton-Jacobi-Isaacs Equation,Reach-avoid game,Reachability analysis,Robust motion planning,Sampled-data system},
+  title    = {{Robust Motion Planning in Dynamic Environments Based on Sampled-Data Hamilton-Jacobi Reachability}},
+  year     = {2020},
+  abstract = {We propose a novel formal approach to robust motion planning (MP) in dynamic environments based on reachability analysis. While traditional MP methods usually fail to provide formal robust safety and performance guarantees, our approach provably ensures safe task achievement in time-varying and adversarial environments under parametric uncertainty. We leverage recent results on Hamilton–Jacobi (HJ) reachability and differential games in order to compute offline guaranteed motion plans that are compatible with the sampled-data (SD) paradigm. Also, we synthesize online provably robust safety-preserving and target-reaching feedback controls. Unlike earlier applications of reachability analysis to MP, our methodology handles arbitrary time-varying constraints, adversarial agents such as pursuing obstacles or evading targets, and takes into account the robot’s configuration. Furthermore, we use HJ projections in order to reduce significantly the computational burden without trading off safety guarantees. The validity of this approach is demonstrated through the case study of a robot arm subject to measurement errors, which is tasked with safely reaching a goal in a known time-varying workspace while avoiding capture by an unpredictable pursuer. Finally, the performance of the approach and research perspectives are discussed.}
 }
 
-@INPROCEEDINGS{JordanaICRA24,
-  author={Armand Jordana* and Sébastien Kleff* and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
-  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)}, 
-  title={Force Feedback Model-Predictive Control via Online Estimation}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={11503-11509},
-  keywords={Torque;Systematics;Force;Force feedback;Estimation;Robot sensing systems;Force sensors},
-  doi={10.1109/ICRA57147.2024.10611156},
-  abstract={Nonlinear model-predictive control has recently shown its practicability in robotics. However it remains limited in contact interaction tasks due to its inability to leverage sensed efforts. In this work, we propose a novel model-predictive control approach that incorporates direct feedback from force sensors while circumventing explicit modeling of the contact force evolution. Our approach is based on the online estimation of the discrepancy between the force predicted by the dynamics model and force measurements, combined with high-frequency nonlinear model-predictive control. We report an experimental validation on a torque-controlled manipulator in challenging tasks for which accurate force tracking is necessary. We show that a simple reformulation of the optimal control problem combined with standard estimation tools enables to achieve state-of-the-art performance in force control while preserving the benefits of model-predictive control, thereby outperforming traditional force control techniques. This work paves the way toward a more systematic integration of force sensors in model predictive control.}
+@inproceedings{JordanaICRA24,
+  author    = {Armand Jordana* and Sébastien Kleff* and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
+  booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+  title     = {Force Feedback Model-Predictive Control via Online Estimation},
+  year      = {2024},
+  keywords  = {Torque;Systematics;Force;Force feedback;Estimation;Robot sensing systems;Force sensors},
+  doi       = {10.1109/ICRA57147.2024.10611156},
+  paper_url = {https://doi.org/10.1109/ICRA57147.2024.10611156},
+  video_url = {https://youtu.be/example_video_placeholder},
+  abstract  = {Nonlinear model-predictive control has recently shown its practicability in robotics. However it remains limited in contact interaction tasks due to its inability to leverage sensed efforts. In this work, we propose a novel model-predictive control approach that incorporates direct feedback from force sensors while circumventing explicit modeling of the contact force evolution. Our approach is based on the online estimation of the discrepancy between the force predicted by the dynamics model and force measurements, combined with high-frequency nonlinear model-predictive control. We report an experimental validation on a torque-controlled manipulator in challenging tasks for which accurate force tracking is necessary. We show that a simple reformulation of the optimal control problem combined with standard estimation tools enables to achieve state-of-the-art performance in force control while preserving the benefits of model-predictive control, thereby outperforming traditional force control techniques. This work paves the way toward a more systematic integration of force sensors in model predictive control.}
 }
 
 
 @article{Parag2022,
-  author={Parag, Amit and S{\'{e}}bastien Kleff and Saci, Léo and Mansard, Nicolas and Stasse, Olivier},
-  journal={IEEE International Conference on Robotics and Automation (ICRA)}, 
-  title={Value learning from trajectory optimization and Sobolev descent: A step toward reinforcement learning with superlinear convergence properties}, 
-  year={2022},
-  abstract={The recent successes in deep reinforcement learning largely rely on the capabilities of generating masses of data, which in turn implies the use of a simulator. In particular, current progress in multi body dynamic simulators are under-pinning the implementation of reinforcement learning for end-to-end control of robotic systems. Yet simulators are mostly considered as black boxes while we have the knowledge to make them produce a richer information. In this paper, we are proposing to use the derivatives of the simulator to help with the convergence of the learning. For that, we combine model-based trajectory optimization to produce informative trials using 1st- and 2nd-order simulation derivatives. These locally-optimal runs give fair estimates of the value function and its derivatives, that we use to accelerate the convergence of the critics using Sobolev learning. We empirically demonstrate that the algorithm leads to a faster and more accurate estimation of the value function. The resulting value estimate is used in model-predictive controller as a proxy for shortening the preview horizon. We believe that it is also a first step toward superlinear reinforcement learning algorithm using simulation derivatives, that we need for end-to-end legged locomotion.},
-  note={\textcolor{blue}{\textbf{Contribution} : I conducted the experimental validation, which includes providing optimal control problems on a manipulator, designing a scalable sampling strategy, training the Sobolev network, and producing figures. I also actively contributed to the paper writing and to the production of the accompanying video
-}},
+  author   = {Parag, Amit and S{\'{e}}bastien Kleff and Saci, Léo and Mansard, Nicolas and Stasse, Olivier},
+  journal  = {IEEE International Conference on Robotics and Automation (ICRA)},
+  title    = {Value learning from trajectory optimization and Sobolev descent: A step toward reinforcement learning with superlinear convergence properties},
+  year     = {2022},
+  abstract = {The recent successes in deep reinforcement learning largely rely on the capabilities of generating masses of data, which in turn implies the use of a simulator. In particular, current progress in multi body dynamic simulators are under-pinning the implementation of reinforcement learning for end-to-end control of robotic systems. Yet simulators are mostly considered as black boxes while we have the knowledge to make them produce a richer information. In this paper, we are proposing to use the derivatives of the simulator to help with the convergence of the learning. For that, we combine model-based trajectory optimization to produce informative trials using 1st- and 2nd-order simulation derivatives. These locally-optimal runs give fair estimates of the value function and its derivatives, that we use to accelerate the convergence of the critics using Sobolev learning. We empirically demonstrate that the algorithm leads to a faster and more accurate estimation of the value function. The resulting value estimate is used in model-predictive controller as a proxy for shortening the preview horizon. We believe that it is also a first step toward superlinear reinforcement learning algorithm using simulation derivatives, that we need for end-to-end legged locomotion.},
+  note     = {\textcolor{blue}{\textbf{Contribution} : I conducted the experimental validation, which includes providing optimal control problems on a manipulator, designing a scalable sampling strategy, training the Sobolev network, and producing figures. I also actively contributed to the paper writing and to the production of the accompanying video
+              }}
 }
 
 @article{KleffHumanoids22,
-author = {S{\'{e}}bastien Kleff and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
-title = {{On the Derivation of the Contact Dynamics in Arbitrary Frames (Application to Polishing with Talos)}},
-url = {https://hal.archives-ouvertes.fr/hal-03758989},
-journal = {IEEE-RAS International Conference on Humanoid Robots (Humanoids)},
-year = {2022},
-abstract={Contact dynamics relies on the simultaneous satisfaction of constraints at the robot body level and at the contact level. At both levels, various formulations can be chosen that all must lead to the same results, given the same hypothesis, hence the little importance of their details. Yet when using it in an optimal control problem, a particular formulation is often imposed by the task to be performed by the robot. In this paper, we detail the formulation of the contact quantities (force, movement) in an arbitrary frame imposed by the task. In that case, we will show that we are typically not interested in working in the local frame (attached to the robot contact point), nor in the world frame, but in a user-defined frame centered at the contact location with a fixed orientation in the world. The derivations can then be used for 6D, 3D or normal (pure-sliding) contact. We implemented the corresponding derivatives on top of the contact dynamics of the rigid-body dynamics library Pinocchio in the optimal control solver Crocoddyl. We show that a unique formulation is able to handle several operational orientations, by achieving several surfacing tasks in model predictive control with the robot Talos.}
+  author   = {S{\'{e}}bastien Kleff and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
+  title    = {{On the Derivation of the Contact Dynamics in Arbitrary Frames (Application to Polishing with Talos)}},
+  url      = {https://hal.archives-ouvertes.fr/hal-03758989},
+  journal  = {IEEE-RAS International Conference on Humanoid Robots (Humanoids)},
+  year     = {2022},
+  abstract = {Contact dynamics relies on the simultaneous satisfaction of constraints at the robot body level and at the contact level. At both levels, various formulations can be chosen that all must lead to the same results, given the same hypothesis, hence the little importance of their details. Yet when using it in an optimal control problem, a particular formulation is often imposed by the task to be performed by the robot. In this paper, we detail the formulation of the contact quantities (force, movement) in an arbitrary frame imposed by the task. In that case, we will show that we are typically not interested in working in the local frame (attached to the robot contact point), nor in the world frame, but in a user-defined frame centered at the contact location with a fixed orientation in the world. The derivations can then be used for 6D, 3D or normal (pure-sliding) contact. We implemented the corresponding derivatives on top of the contact dynamics of the rigid-body dynamics library Pinocchio in the optimal control solver Crocoddyl. We show that a unique formulation is able to handle several operational orientations, by achieving several surfacing tasks in model predictive control with the robot Talos.}
 }
 
 
 @article{KleffICRA21,
-author = {S{\'{e}}bastien Kleff and Meduri, Avadesh and Budhiraja, Rohan and Mansard, Nicolas and Righetti, Ludovic},
-title = {{High-Frequency Nonlinear Model Predictive Control of a Manipulator}},
-url = {https://hal.archives-ouvertes.fr/hal-02993058},
-journal={IEEE International Conference on Robotics and Automation (ICRA)},
-year = {2021},
-abstract={Model Predictive Control (MPC) promises to endow robots with enough reactivity to perform complex tasks in dynamic environments by frequently updating their motion plan based on measurements. Despite its appeal, it has seldom been deployed on real machines because of scaling constraints. This paper presents the first hardware implementation of closed-loop nonlinear MPC on a 7-DoF torque-controlled robot. Our controller leverages a state-of-the art optimal control solver, namely Differential Dynamic Programming (DDP), in order to replan state and control trajectories at real-time rates (1kHz). In addition to this experimental proof of concept, an exhaustive performance analysis shows that our controller outperforms open-loop MPC on a rapid cyclic end-effector task. We also exhibit the importance of a sufficient preview horizon and full robot dynamics through comparisons with inverse dynamics and kinematic optimization.}
+  author   = {S{\'{e}}bastien Kleff and Meduri, Avadesh and Budhiraja, Rohan and Mansard, Nicolas and Righetti, Ludovic},
+  title    = {{High-Frequency Nonlinear Model Predictive Control of a Manipulator}},
+  url      = {https://hal.archives-ouvertes.fr/hal-02993058},
+  journal  = {IEEE International Conference on Robotics and Automation (ICRA)},
+  year     = {2021},
+  abstract = {Model Predictive Control (MPC) promises to endow robots with enough reactivity to perform complex tasks in dynamic environments by frequently updating their motion plan based on measurements. Despite its appeal, it has seldom been deployed on real machines because of scaling constraints. This paper presents the first hardware implementation of closed-loop nonlinear MPC on a 7-DoF torque-controlled robot. Our controller leverages a state-of-the art optimal control solver, namely Differential Dynamic Programming (DDP), in order to replan state and control trajectories at real-time rates (1kHz). In addition to this experimental proof of concept, an exhaustive performance analysis shows that our controller outperforms open-loop MPC on a rapid cyclic end-effector task. We also exhibit the importance of a sufficient preview horizon and full robot dynamics through comparisons with inverse dynamics and kinematic optimization.}
 }
 @article{KleffIROS22,
-author = {S{\'{e}}bastien Kleff and Dantec, Ewen and Saurel, Guilhem and Mansard, Nicolas and Righetti, Ludovic},
-title = {{Introducing Force Feedback in Model Predictive Control}},
-url = {https://hal.archives-ouvertes.fr/hal-03594295},
-journal = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-year = 2022,
-abstract={In the literature about model predictive control (MPC), contact forces are planned rather than controlled. In this paper, we propose a novel paradigm to incorporate effort measurements into a predictive controller, hence allowing to control them by direct measurement feedback. We first demonstrate why the classical optimal control formulation, based on position and velocity state feedback, cannot handle direct feedback on force information. Following previous approaches in force control, we then propose to augment the classical formulations with a model of the robot actuation, which naturally allows to generate online trajectories that adapt to sensed position, velocity and torques. We propose a complete implementation of this idea on the upper part of a real humanoid robot, and show through hardware experiments that this new formulation incorporating effort feedback outperforms classical MPC in challenging tasks where physical interaction with the environment is crucial.}
+  author   = {S{\'{e}}bastien Kleff and Dantec, Ewen and Saurel, Guilhem and Mansard, Nicolas and Righetti, Ludovic},
+  title    = {{Introducing Force Feedback in Model Predictive Control}},
+  url      = {https://hal.archives-ouvertes.fr/hal-03594295},
+  journal  = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year     = 2022,
+  abstract = {In the literature about model predictive control (MPC), contact forces are planned rather than controlled. In this paper, we propose a novel paradigm to incorporate effort measurements into a predictive controller, hence allowing to control them by direct measurement feedback. We first demonstrate why the classical optimal control formulation, based on position and velocity state feedback, cannot handle direct feedback on force information. Following previous approaches in force control, we then propose to augment the classical formulations with a model of the robot actuation, which naturally allows to generate online trajectories that adapt to sensed position, velocity and torques. We propose a complete implementation of this idea on the upper part of a real humanoid robot, and show through hardware experiments that this new formulation incorporating effort feedback outperforms classical MPC in challenging tasks where physical interaction with the environment is crucial.}
 }
 
 
 
 @article{KleffCCDC2018,
-author = {S{\'{e}}bastien Kleff and Li, Ning},
-doi = {10.1109/CCDC.2018.8407709},
-journal = {2018 Chinese Control And Decision Conference (CCDC)},
-title = {{A sampled-data Hamilton-Jacobi reachability approach to safe and robust motion planning}},
-url = {https://ieeexplore.ieee.org/document/8407709/},
-year = {2018},
-abstract={Reachability analysis provides safety guarantees for state-constrained control systems, which makes it an attractive tool to address motion planning problems, but there are still few applications in cluttered environments. In this paper, a Hamilton-Jacobi reachability based formulation of the motion planning problem in both static and dynamic environments for sampled-data systems is proposed. Also, a robust safety-preserving and target-reaching sampled-data feedback controller is synthesized. We use an existing sampled-data reachability algorithm to compute robust reach- avoid tubes and formally extend it to the state-time space in order to deal with moving target and obstacles. The validity of this approach is eventually demonstrated through simulations in two simple scenarios and the results are discussed.}
+  author   = {S{\'{e}}bastien Kleff and Li, Ning},
+  doi      = {10.1109/CCDC.2018.8407709},
+  journal  = {Chinese Control And Decision Conference (CCDC)},
+  title    = {{A sampled-data Hamilton-Jacobi reachability approach to safe and robust motion planning}},
+  url      = {https://ieeexplore.ieee.org/document/8407709/},
+  year     = {2018},
+  abstract = {Reachability analysis provides safety guarantees for state-constrained control systems, which makes it an attractive tool to address motion planning problems, but there are still few applications in cluttered environments. In this paper, a Hamilton-Jacobi reachability based formulation of the motion planning problem in both static and dynamic environments for sampled-data systems is proposed. Also, a robust safety-preserving and target-reaching sampled-data feedback controller is synthesized. We use an existing sampled-data reachability algorithm to compute robust reach- avoid tubes and formally extend it to the state-time space in order to deal with moving target and obstacles. The validity of this approach is eventually demonstrated through simulations in two simple scenarios and the results are discussed.}
 }
 
 
 @article{Khadiv2017,
-author = {Majid Khadiv and S{\'{e}}bastien Kleff and Alexander Herzog and S. Ali A. Moosavian and Stefan Schaal and Ludovic Righetti},
-journal = {4th RSI International Conference on Robotics and Mechatronics, ICRoM 2016},
-title = {{Stepping stabilization using a combination of DCM tracking and step adjustment}},
-year = {2017},
-note={\textcolor{blue}{\textbf{Contribution} : I designed and implemented a prototype of the proposed approach (the DCM trajectory generation and the whole-body QP formulation) during my undergraduate research internship at the Max Planck Institute
-}},
-abstract={In this paper, a method for stabilizing biped robots stepping by a combination of Divergent Component of Motion (DCM) tracking and step adjustment is proposed. In this method, the DCM trajectory is generated, consistent with the predefined footprints. Furthermore, a swing foot trajectory modification strategy is proposed to adapt the landing point, using DCM measurement. In order to apply the generated trajectories to the full robot, a Hierarchical Inverse Dynamics (HID) is employed. The HID enables us to use different combinations of the DCM tracking and step adjustment for stabilizing different biped robots. Simulation experiments on two scenarios for two different simulated robots, one with active ankles and the other with passive ankles, are carried out. Simulation results demonstrate the effectiveness of the proposed method for robots with both active and passive ankles.}
+  author   = {Majid Khadiv and S{\'{e}}bastien Kleff and Alexander Herzog and S. Ali A. Moosavian and Stefan Schaal and Ludovic Righetti},
+  journal  = {4th RSI International Conference on Robotics and Mechatronics, ICRoM 2016},
+  title    = {{Stepping stabilization using a combination of DCM tracking and step adjustment}},
+  year     = {2016},
+  note     = {\textcolor{blue}{\textbf{Contribution} : I designed and implemented a prototype of the proposed approach (the DCM trajectory generation and the whole-body QP formulation) during my undergraduate research internship at the Max Planck Institute
+              }},
+  abstract = {In this paper, a method for stabilizing biped robots stepping by a combination of Divergent Component of Motion (DCM) tracking and step adjustment is proposed. In this method, the DCM trajectory is generated, consistent with the predefined footprints. Furthermore, a swing foot trajectory modification strategy is proposed to adapt the landing point, using DCM measurement. In order to apply the generated trajectories to the full robot, a Hierarchical Inverse Dynamics (HID) is employed. The HID enables us to use different combinations of the DCM tracking and step adjustment for stabilizing different biped robots. Simulation experiments on two scenarios for two different simulated robots, one with active ankles and the other with passive ankles, are carried out. Simulation results demonstrate the effectiveness of the proposed method for robots with both active and passive ankles.}
 }
 
 @article{Gazar22,
-author = {Ahmad Gazar and Majid Khadiv and S{\'{e}}bastien Kleff and Andrea Del Prete and Ludovic Righetti},
-journal = {The International Symposium of Robotics Research, ISR 2022},
-title = {{Nonlinear stochastic trajectory optimization for centroidal momentum motion generation of legged robots}},
-year = {2022},
-abstract={Generation of robust trajectories for legged robots remains a challenging task due to the underlying nonlinear, hybrid and intrinsically unstable dynamics which needs to be stabilized through limited contact forces. Furthermore, disturbances arising from unmodelled contact interactions with the environment and model mismatches can hinder the quality of the planned trajectories leading to unsafe motions. In this work, we propose to use stochastic trajectory optimization for generating robust centroidal momentum trajectories to account for additive uncertainties on the model dynamics and parametric uncertainties on contact locations. Through an alternation between the robust centroidal and whole-body trajectory optimizations, we generate robust momentum trajectories while being consistent with the whole-body dynamics. We perform an extensive set of simulations subject to different uncertainties on a quadruped robot showing that our stochastic trajectory optimization problem reduces the amount of foot slippage for different gaits while achieving better performance over deterministic planning.}
+  author   = {Ahmad Gazar and Majid Khadiv and S{\'{e}}bastien Kleff and Andrea Del Prete and Ludovic Righetti},
+  journal  = {The International Symposium of Robotics Research, ISR 2022},
+  title    = {{Nonlinear stochastic trajectory optimization for centroidal momentum motion generation of legged robots}},
+  year     = {2022},
+  abstract = {Generation of robust trajectories for legged robots remains a challenging task due to the underlying nonlinear, hybrid and intrinsically unstable dynamics which needs to be stabilized through limited contact forces. Furthermore, disturbances arising from unmodelled contact interactions with the environment and model mismatches can hinder the quality of the planned trajectories leading to unsafe motions. In this work, we propose to use stochastic trajectory optimization for generating robust centroidal momentum trajectories to account for additive uncertainties on the model dynamics and parametric uncertainties on contact locations. Through an alternation between the robust centroidal and whole-body trajectory optimizations, we generate robust momentum trajectories while being consistent with the whole-body dynamics. We perform an extensive set of simulations subject to different uncertainties on a quadruped robot showing that our stochastic trajectory optimization problem reduces the amount of foot slippage for different gaits while achieving better performance over deterministic planning.}
 }
