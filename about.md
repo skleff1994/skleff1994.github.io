@@ -19,7 +19,8 @@ For more details, please refer to <a href="{{ '/cv-page/' | relative_url }}">my 
 Research
 ======
 
-My main scientific objective is to endow modern robots with the ability to physically interact with uncertain environments. This ability is crucial in order to assist humans in manual labor, where physical contact is ubiquitous. More specifically, my goal is to design safe, robust and adaptive control architectures that exploit multiple sensory modalities, such as the sense of touch, in order to reason and make online decision in dynamic and changing workspaces.
+My main scientific objective is to endow modern robots with the ability to physically interact with uncertain environments. This ability is crucial in order to deploy robots in the real world (e.g. assist humans in manual labor), where physical contact is ubiquitous. 
+<!-- More specifically, my goal is to design safe, robust and adaptive control architectures that exploit multiple sensory modalities, such as the sense of touch, in order to reason and make online decision in dynamic and changing workspaces. -->
 
 <!-- My research lies at the intersection of model-predictive control (MPC), human-robot collaboration and physical interaction control. My doctoral research, conducted jointly at the <a href="https://wp.nyu.edu/machinesinmotion/" target="_blank" rel="noopener noreferrer">Machines in Motion Laboratory</a> and <a href="https://gepettoweb.laas.fr/" target="_blank" rel="noopener noreferrer">LAAS-CNRS</a> focused on leveraging force sensing in MPC for robotic motion generation. I also developed software and numerical tools, and more generally I contributed to the development of nonlinear MPC on torque-control robots. 
 
@@ -28,15 +29,21 @@ Currently, I am working toward integrating tactile feedback and robust MPC metho
 
 <div class="row align-items-top justify-content-around" style="margin-top: 30px;">
   <div class="col-sm-12 col-md-6 col-lg-3 text-center" style="padding-bottom: 30px">
+    <a href="{{ '/research/force-control/' | relative_url }}">
+      <img src="{{ '/images/research/force_control.png' | relative_url }}" alt="Force Control" class="img-fluid" style="width:220px; height:170px; border-radius: 1px;">
+      <div style="font-size: 1.1rem; margin-top: 10px;">Force Control</div>
+    </a>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-3 text-center" style="padding-bottom: 30px">
     <a href="{{ '/research/mpc/' | relative_url }}">
       <img src="{{ '/images/research/mpc.png' | relative_url }}" alt="Model Predictive Control" class="img-fluid" style="width:220px; height:170px; border-radius: 1px;">
       <div style="font-size: 1.1rem; margin-top: 10px;">Model Predictive Control</div>
     </a>
   </div>
   <div class="col-sm-12 col-md-6 col-lg-3 text-center" style="padding-bottom: 30px">
-    <a href="{{ '/research/force-control/' | relative_url }}">
-      <img src="{{ '/images/research/force_control.png' | relative_url }}" alt="Force Control" class="img-fluid" style="width:220px; height:170px; border-radius: 1px;">
-      <div style="font-size: 1.1rem; margin-top: 10px;">Force Control</div>
+    <a href="{{ '/research/tactile-hrc/' | relative_url }}">
+      <img src="{{ '/images/research/tactile_hrc.png' | relative_url }}" alt="Tactile Control" class="img-fluid" style="width:220px; height:170px; border-radius: 1px;">
+      <div style="font-size: 1.1rem; margin-top: 10px;">Tactile Control</div>
     </a>
   </div>
   <!-- <div class="col-sm-12 col-md-6 col-lg-3 text-center" style="padding-bottom: 30px">
@@ -45,17 +52,11 @@ Currently, I am working toward integrating tactile feedback and robust MPC metho
       <div style="font-size: 1.1rem; margin-top: 10px;">Robust Motion Planning</div>
     </a>
   </div> -->
-  <div class="col-sm-12 col-md-6 col-lg-3 text-center" style="padding-bottom: 30px">
-    <a href="{{ '/research/tactile-hrc/' | relative_url }}">
-      <img src="{{ '/images/research/tactile_hrc.png' | relative_url }}" alt="Tactile Control" class="img-fluid" style="width:220px; height:170px; border-radius: 1px;">
-      <div style="font-size: 1.1rem; margin-top: 10px;">Tactile Control</div>
-    </a>
-  </div>
 </div>
 
 
-Software
+<!-- Software
 ======
-I am one of the main developers and managers of the <a href="https://github.com/machines-in-motion/mim_solvers" target="_blank" rel="noopener noreferrer">mim_solvers</a> library (with <a href="https://scholar.google.com/citations?user=zLICCioAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Armand Jordana</a> and <a href="https://scholar.google.com/citations?user=DsGVfRwAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Avadesh Meduri</a>), an efficient numerical optimization solver tailored for nonlinear Model-Predictive Control, compatible with the <a href="https://github.com/loco-3d/crocoddyl" target="_blank" rel="noopener noreferrer">Crocoddyl</a> library.
+I am one of the main developers and managers of the <a href="https://github.com/machines-in-motion/mim_solvers" target="_blank" rel="noopener noreferrer">mim_solvers</a> library, an efficient numerical optimization solver tailored for nonlinear Model-Predictive Control, compatible with the <a href="https://github.com/loco-3d/crocoddyl" target="_blank" rel="noopener noreferrer">Crocoddyl</a> library. -->
 
 <!-- I also contributed to the development and democratization of nonlinear MPC in the robotics community through the <a href="https://github.com/machines-in-motion/croco_mpc_utils" target="_blank" rel="noopener noreferrer">croco_mpc_utils</a> plugin, which enables to quickly prototype Optimal Control Problems in Crocoddyl through templated configuration files and to visualize their solutions. I also contributed to the <a href="https://github.com/loco-3d/crocoddyl" target="_blank" rel="noopener noreferrer">Crocoddyl</a> library by implementing constrained forward dynamics derivatives in moving coordinates. -->
