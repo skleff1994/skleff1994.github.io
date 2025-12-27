@@ -23,7 +23,7 @@
 
 
 
-<meta name="description" content="the list of scientific publications of the lab">
+<meta name="description" content="selected publications">
 
 
 
@@ -166,6 +166,9 @@
             
             <li class="masthead__menu-item"><a href="https://skleff1994.github.io/publications/">Publications</a></li>
           
+            
+            <li class="masthead__menu-item"><a href="https://skleff1994.github.io/cv-page/">CV</a></li>
+          
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
@@ -178,1254 +181,1477 @@
 
     <div class="container" style="max-width: 900px; margin: 0 auto; padding-left: 24px; padding-right: 24px; text-align: justify;">
 
-Our up-to-date publication list is also available on <a href="https://scholar.google.com/citations?user=yBs28hUAAAAJ&amp;hl=en">Google Scholar</a>.
+My up-to-date publications list is also available on <a href="https://scholar.google.com/citations?user=yBs28hUAAAAJ&amp;hl=en">Google Scholar</a>.
 
 <div class="bib_section" style="padding-top: 20px">
-  <ol class="bibliography"><li><div class="container" style="max-width: 900px; margin: 0 auto;">
+  <style>
+    ol.bibliography-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    ol.bibliography-list li {
+        margin-bottom: 24px;
+    }
+    ol.bibliography-list li .bib-entry-container {
+        display: flex;
+        align-items: flex-start;
+    }
+    ol.bibliography-list li .bib-icon {
+        flex-shrink: 0;
+        margin-right: 15px;
+    }
+    /* Hide numbers on publications page */
+    ol.bibliography-list li .bib-number {
+        display: none;
+    }
+    ol.bibliography-list li .bib-text {
+        flex: 1;
+    }
+  </style>
+  <ol class="bibliography-list">
+    <ol class="bibliography"><li><li id="bib-JordanaSQP">
+  <div class="bib-entry-container">
+    
+    <div class="bib-icon">
+      <img src="/images/icons/JordanaSQP.png" alt="JordanaSQP icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      
+      
+      A.
+      
+      Jordana<sup>*</sup>,
+      
+      
+      
+      
+      
+      <strong>Sébastien Kleff<sup>*</sup></strong>,
+      
+      
+      
+      
+      
+      
+      
+      A.
+      
+      Meduri<sup>*</sup>,
+      
+      
+      
+      
+      
+      
+      
+      J.
+      
+      Carpentier,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Mansard,
+      
+      
+      
+      
+      
+      
+      
+      L.
+      
+      Righetti,
+      
+      
 
-<!-- 
-   -->
-  
-  
+      
+      "Structure-Exploiting Sequential Quadratic Programming for Model-Predictive Control",
+      
 
-  
+      
+      <i>IEEE Transactions on Robotics</i>,
+      
+      
+      
+      
+      
+      2025.
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/JordanaSQP.png" alt="JordanaSQP icon" />
-  </div>
-  <div class="bib-text">
-      
-      
-      
-        
-        
-          A.
-        
-        Jordana<sup>*</sup>,
-      
-    
-      
-      
-      
-        <strong>Sébastien Kleff<sup>*</sup></strong>,
-      
-    
-      
-      
-      
-        
-        
-          A.
-        
-        Meduri<sup>*</sup>,
-      
-    
-      
-      
-      
-        
-        
-          J.
-        
-        Carpentier,
-      
-    
-      
-      
-      
-        
-        
-          N.
-        
-        Mansard,
-      
-    
-      
-      
-      
-        
-        
-          L.
-        
-        Righetti,
-      
-    
+      <br />
 
-    
-    "Structure-Exploiting Sequential Quadratic Programming for Model-Predictive Control",
-    
+      
+      <a href="https://laas.hal.science/hal-04330251v2/file/SQP_OC_paper_final.pdf" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
+      </a>
+      
 
-    
-        <i>IEEE Transactions on Robotics</i>,
-        vol. 41,
-        no. ,
-    
-    pp. 4960-4974,
-    
-    2025.
+      
 
-    <br />
+      
+      <a href="https://www.youtube.com/watch?v=eXAQ10NDbbg" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      
 
-    
+      
+      <a href="https://github.com/machines-in-motion/mim_solvers" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Code
+      </a>
+      
+
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="The promise of model-predictive control (MPC) in robotics has led to extensive development of efficient numerical optimal control solvers in line with differential dynamic programming because it exploits the sparsity induced by time. In this work, we argue that this effervescence has hidden the fact that sparsity can be equally exploited by standard nonlinear optimization. In particular, we show how a tailored implementation of sequential quadratic programming (QP) achieves state-of-the-art MPC. Then, we clarify the connections between popular algorithms from the robotics community and well-established optimization techniques. Further, the sequential quadratic program formulation naturally encompasses the constrained case, a notoriously difficult problem in the robotics community. Specifically, we show that it only requires a sparsity-exploiting implementation of a state-of-the-art QP solver. We illustrate the validity of this approach in a comparative study and experiments on a torque-controlled manipulator. To the best of our knowledge, this is the first demonstration of closed loop nonlinear MPC with constraints on a real robot.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{JordanaSQP,
   author = {Jordana*, Armand and Kleff*, Sébastien and Meduri*, Avadesh and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
   journal = {IEEE Transactions on Robotics},
   title = {Structure-Exploiting Sequential Quadratic Programming for Model-Predictive Control},
   year = {2025},
-  volume = {41},
-  number = {},
-  pages = {4960-4974},
   keywords = {Robots;Optimization;Heuristic algorithms;Convergence;Optimal control;Quadratic programming;Predictive control;Newton method;Vectors;Standards;Motion and path planning;model-predictive control;optimization and optimal control;reactive and sensor-based planning},
-  doi = {10.1109/TRO.2025.3595674}
+  doi = {10.1109/TRO.2025.3595674},
+  paper_url = {https://laas.hal.science/hal-04330251v2/file/SQP_OC_paper_final.pdf},
+  code_url = {https://github.com/machines-in-motion/mim_solvers},
+  video_url = {https://www.youtube.com/watch?v=eXAQ10NDbbg}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/JordanaSQP.html" class="btn_bib btn btn-sm">Details</a>
-
-    
+    </div>
   </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+</li></li>
+<li><li id="bib-KleffTRO">
+  <div class="bib-entry-container">
+    
+    <div class="bib-icon">
+      <img src="/images/icons/KleffTRO.png" alt="KleffTRO icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      <strong>Sébastien Kleff</strong>,
+      
+      
+      
+      
+      
+      
+      
+      A.
+      
+      Jordana,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Mansard,
+      
+      
+      
+      
+      
+      
+      
+      L.
+      
+      Righetti,
+      
+      
 
-<!-- 
-   -->
-  
-  
+      
+      "Force Feedback Model Predictive Control: A Soft Contact Approach",
+      
 
-  
+      
+      <i>Preprint</i>,
+      
+      
+      
+      
+      
+      2025.
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/KleffTRO.png" alt="KleffTRO icon" />
-  </div>
-  <div class="bib-text">
-      
-      
-      
-        <strong>Sébastien Kleff</strong>,
-      
-    
-      
-      
-      
-        
-        
-          A.
-        
-        Jordana,
-      
-    
-      
-      
-      
-        
-        
-          N.
-        
-        Mansard,
-      
-    
-      
-      
-      
-        
-        
-          L.
-        
-        Righetti,
-      
-    
+      <br />
 
-    
-    "Force Feedback Model Predictive Control: A Soft Contact Approach",
-    
+      
 
-    
-        <i>Submitted to T-RO (Under review)</i>,
-        
-        
-    
-    
-    
-    2025.
+      
+      <a href="https://hal.science/hal-04572399v2/document" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Preprint
+      </a>
+      
 
-    <br />
+      
+      <a href="https://youtu.be/tRDU4Flo7Lg?si=x01E5S3qqQpRtQfQ" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      
 
-    
+      
+
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="Model-predictive control is an appealing framework to control robots due to its ability to exploit both sensory information and model predictions. But its performance remains fundamentally limited in tasks involving contact with the environment, in part because optimal control policies do not reason over force measurements. In this article, we propose a first complete answer to this issue by introducing a novel approach to perform force feedback in model-predictive control. We propose to augment the state-space with a visco-elastic model of the contact force in the task space in order to systematically include measured efforts into the optimal control loop. We derive a complete predictive controller with an efficient formulation whose implementation is released in open-source. We demonstrate through simulation studies and hardware experiments that our approach enables to combine the benefits of force control and model-predictive control within a single architecture, thereby outperforming existing approaches in challenging contact tasks.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{KleffTRO,
   author = {Kleff, S{\'{e}}bastien and Jordana, Armand and Mansard, Nicolas and Righetti, Ludovic},
   title = {{Force Feedback Model Predictive Control: A Soft Contact Approach}},
-  journal = {Submitted to T-RO (Under review)},
-  year = {2025}
+  journal = {Preprint},
+  year = {2025},
+  video_url = {https://youtu.be/tRDU4Flo7Lg?si=x01E5S3qqQpRtQfQ},
+  preprint_url = {https://hal.science/hal-04572399v2/document}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/KleffTRO.html" class="btn_bib btn btn-sm">Details</a>
-
-    
+    </div>
   </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+</li></li>
+<li><li id="bib-WojciechowskiDeburring">
+  <div class="bib-entry-container">
+    
+    <div class="bib-icon">
+      <img src="/images/icons/WojciechowskiDeburring.png" alt="WojciechowskiDeburring icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      
+      
+      K.
+      
+      Wojciechowski,
+      
+      
+      
+      
+      
+      
+      
+      E.
+      
+      Gursoy,
+      
+      
+      
+      
+      
+      
+      
+      A.
+      
+      Haffemayer,
+      
+      
+      
+      
+      
+      <strong>Sébastien Kleff</strong>,
+      
+      
+      
+      
+      
+      
+      
+      V.
+      
+      Bonnet,
+      
+      
+      
+      
+      
+      
+      
+      F.
+      
+      Lamiraux,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Mansard,
+      
+      
 
-<!-- 
-   -->
-  
-  
+      
+      "Learning-Guided Force-Feedback Model Predictive Control with Obstacle Avoidance for Robotic Deburring",
+      
 
-  
+      
+      <i></i>,
+      
+      
+      
+      
+      
+      2025.
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/JordanaValue2025.png" alt="JordanaValue2025 icon" />
+      <br />
+
+      
+      <a href="https://hal.science/hal-05320433v1/file/deburring_paper-4.pdf" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
+      </a>
+      
+
+      
+
+      
+      <a href="https://peertube.laas.fr/w/oY2KeZcjdsmfywg5aH3y34" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      
+
+      
+      <a href="https://github.com/agimus-project/agimus-demos/tree/humble-devel" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Code
+      </a>
+      
+
+      
+
+      
+      <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{WojciechowskiDeburring,
+  title = {{Learning-Guided Force-Feedback Model Predictive Control with Obstacle Avoidance for Robotic Deburring}},
+  author = {Wojciechowski, Krzysztof and Gursoy, Ege and Haffemayer, Arthur and Kleff, S{\'e}bastien and Bonnet, Vincent and Lamiraux, Florent and Mansard, Nicolas},
+  url = {https://hal.science/hal-05320433},
+  year = {2025},
+  keywords = {Diffusion ; Motion planning ; Torque control ; Deburring ; Model predicitive control MPC},
+  paper_url = {https://hal.science/hal-05320433v1/file/deburring_paper-4.pdf},
+  video_url = {https://peertube.laas.fr/w/oY2KeZcjdsmfywg5aH3y34},
+  code_url = {https://github.com/agimus-project/agimus-demos/tree/humble-devel}
+}
+" data-bs-html="true">
+        Bib
+      </button>
+      
+
+    </div>
   </div>
-  <div class="bib-text">
-      
-      
-      
-        
-        
-          A.
-        
-        Jordana,
-      
+</li></li>
+<li><li id="bib-JordanaValue2025">
+  <div class="bib-entry-container">
     
+    <div class="bib-icon">
+      <img src="/images/icons/JordanaValue2025.png" alt="JordanaValue2025 icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
       
       
       
-        <strong>Sébastien Kleff</strong>,
-      
-    
       
       
+      A.
       
-        
-        
-          A.
-        
-        Haffemayer,
-      
-    
+      Jordana,
       
       
       
-        
-        
-          J.
-        
-        Ortiz-Haro,
       
-    
+      
+      <strong>Sébastien Kleff</strong>,
       
       
       
-        
-        
-          J.
-        
-        Carpentier,
-      
-    
       
       
       
-        
-        
-          N.
-        
-        Mansard,
       
-    
+      A.
+      
+      Haffemayer,
       
       
       
-        
-        
-          L.
-        
-        Righetti,
       
-    
+      
+      
+      
+      J.
+      
+      Ortiz-Haro,
+      
+      
+      
+      
+      
+      
+      
+      J.
+      
+      Carpentier,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Mansard,
+      
+      
+      
+      
+      
+      
+      
+      L.
+      
+      Righetti,
+      
+      
 
-    
-    "Infinite-Horizon Value Function Approximation for Model Predictive Control",
-    
+      
+      "Infinite-Horizon Value Function Approximation for Model Predictive Control",
+      
 
-    
-        <i>IEEE Robotics and Automation Letters</i>,
-        vol. 10,
-        no. 7,
-    
-    pp. 7563-7570,
-    
-    2025.
+      
+      <i>IEEE Robotics and Automation Letters</i>,
+      
+      
+      
+      
+      
+      2025.
 
-    <br />
+      <br />
 
-    
+      
+      <a href="https://doi.org/10.1109/LRA.2025.3577875" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
+      </a>
+      
+
+      
+
+      
+      <a href="https://youtu.be/CruTx2CvcFQ?si=45bWfp094Mx0v_WY" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      
+
+      
+      <a href="https://github.com/ajordana/value_function" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Code
+      </a>
+      
+
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="Model Predictive Control has emerged as a popular tool for robots to generate complex motions. However, the real-time requirement has limited the use of hard constraints and large preview horizons, which are necessary to ensure safety and stability. In practice, practitioners have to carefully design cost functions that can imitate an infinite horizon formulation, which is tedious and often results in local minima. In this work, we study how to approximate the infinite horizon value function of constrained optimal control problems with neural networks using value iteration and trajectory optimization. Furthermore, we experimentally demonstrate how using this value function approximation as a terminal cost provides global stability to the model predictive controller. The approach is validated on two toy problems and a real-world scenario with online obstacle avoidance on an industrial manipulator where the value function is conditioned to the goal and obstacle.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{JordanaValue2025,
   author = {Jordana, Armand and Kleff, Sébastien and Haffemayer, Arthur and Ortiz-Haro, Joaquim and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
   journal = {IEEE Robotics and Automation Letters},
   title = {Infinite-Horizon Value Function Approximation for Model Predictive Control},
   year = {2025},
-  volume = {10},
-  number = {7},
-  pages = {7563-7570},
   keywords = {Infinite horizon;Function approximation;Robots;Training;Mathematical models;Costs;Cost function;Trajectory optimization;Safety;Predictive control;Optimization and optimal control;machine learning for robot control},
-  doi = {10.1109/LRA.2025.3577875}
+  doi = {10.1109/LRA.2025.3577875},
+  paper_url = {https://doi.org/10.1109/LRA.2025.3577875},
+  video_url = {https://youtu.be/CruTx2CvcFQ?si=45bWfp094Mx0v_WY},
+  code_url = {https://github.com/ajordana/value_function}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/JordanaValue2025.html" class="btn_bib btn btn-sm">Details</a>
-
-    
+    </div>
   </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+</li></li>
+<li><li id="bib-JordanaICRA24">
+  <div class="bib-entry-container">
+    
+    <div class="bib-icon">
+      <img src="/images/icons/JordanaICRA24.png" alt="JordanaICRA24 icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      
+      
+      A.
+      
+      Jordana<sup>*</sup>,
+      
+      
+      
+      
+      
+      <strong>Sébastien Kleff<sup>*</sup></strong>,
+      
+      
+      
+      
+      
+      
+      
+      J.
+      
+      Carpentier,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Mansard,
+      
+      
+      
+      
+      
+      
+      
+      L.
+      
+      Righetti,
+      
+      
 
-<!-- 
-   -->
-  
-  
+      
+      "Force Feedback Model-Predictive Control via Online Estimation",
+      
 
-  
+      
+      in <i>IEEE International Conference on Robotics and Automation (ICRA)</i>,
+      
+      
+      
+      2024.
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/JordanaICRA24.png" alt="JordanaICRA24 icon" />
-  </div>
-  <div class="bib-text">
-      
-      
-      
-        
-        
-          A.
-        
-        Jordana<sup>*</sup>,
-      
-    
-      
-      
-      
-        <strong>Sébastien Kleff<sup>*</sup></strong>,
-      
-    
-      
-      
-      
-        
-        
-          J.
-        
-        Carpentier,
-      
-    
-      
-      
-      
-        
-        
-          N.
-        
-        Mansard,
-      
-    
-      
-      
-      
-        
-        
-          L.
-        
-        Righetti,
-      
-    
+      <br />
 
-    
-    "Force Feedback Model-Predictive Control via Online Estimation",
-    
+      
+      <a href="https://hal.science/hal-04564888v1/document" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
+      </a>
+      
 
-    
-        in <i>2024 IEEE International Conference on Robotics and Automation (ICRA)</i>,
-    
-    pp. 11503-11509,
-    
-    2024.
+      
 
-    <br />
+      
+      <a href="https://www.youtube.com/watch?v=4A-766qsWHI" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      
 
-    
+      
+      <a href="https://github.com/machines-in-motion/force_observer" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Code
+      </a>
+      
+
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="Nonlinear model-predictive control has recently shown its practicability in robotics. However it remains limited in contact interaction tasks due to its inability to leverage sensed efforts. In this work, we propose a novel model-predictive control approach that incorporates direct feedback from force sensors while circumventing explicit modeling of the contact force evolution. Our approach is based on the online estimation of the discrepancy between the force predicted by the dynamics model and force measurements, combined with high-frequency nonlinear model-predictive control. We report an experimental validation on a torque-controlled manipulator in challenging tasks for which accurate force tracking is necessary. We show that a simple reformulation of the optimal control problem combined with standard estimation tools enables to achieve state-of-the-art performance in force control while preserving the benefits of model-predictive control, thereby outperforming traditional force control techniques. This work paves the way toward a more systematic integration of force sensors in model predictive control.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@inproceedings{JordanaICRA24,
   author = {Jordana*, Armand and Kleff*, Sébastien and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
-  booktitle = {2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
   title = {Force Feedback Model-Predictive Control via Online Estimation},
   year = {2024},
-  volume = {},
-  number = {},
-  pages = {11503-11509},
   keywords = {Torque;Systematics;Force;Force feedback;Estimation;Robot sensing systems;Force sensors},
-  doi = {10.1109/ICRA57147.2024.10611156}
+  doi = {10.1109/ICRA57147.2024.10611156},
+  paper_url = {https://hal.science/hal-04564888v1/document},
+  video_url = {https://www.youtube.com/watch?v=4A-766qsWHI},
+  code_url = {https://github.com/machines-in-motion/force_observer}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/JordanaICRA24.html" class="btn_bib btn btn-sm">Details</a>
-
-    
+    </div>
   </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+</li></li>
+<li><li id="bib-Parag2022">
+  <div class="bib-entry-container">
+    
+    <div class="bib-icon">
+      <img src="/images/icons/Parag2022.png" alt="Parag2022 icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      
+      
+      A.
+      
+      Parag,
+      
+      
+      
+      
+      
+      <strong>Sébastien Kleff</strong>,
+      
+      
+      
+      
+      
+      
+      
+      L.
+      
+      Saci,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Mansard,
+      
+      
+      
+      
+      
+      
+      
+      O.
+      
+      Stasse,
+      
+      
 
-<!-- 
-   -->
-  
-  
+      
+      "Value learning from trajectory optimization and Sobolev descent: A step toward reinforcement learning with superlinear convergence properties",
+      
 
-  
+      
+      <i>IEEE International Conference on Robotics and Automation (ICRA)</i>,
+      
+      
+      
+      
+      
+      2022.
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/Parag2022.png" alt="Parag2022 icon" />
-  </div>
-  <div class="bib-text">
-      
-      
-      
-        
-        
-          A.
-        
-        Parag,
-      
-    
-      
-      
-      
-        <strong>Sébastien Kleff</strong>,
-      
-    
-      
-      
-      
-        
-        
-          L.
-        
-        Saci,
-      
-    
-      
-      
-      
-        
-        
-          N.
-        
-        Mansard,
-      
-    
-      
-      
-      
-        
-        
-          O.
-        
-        Stasse,
-      
-    
+      <br />
 
-    
-    "Value learning from trajectory optimization and Sobolev descent: A step toward reinforcement learning with superlinear convergence properties",
-    
+      
+      <a href="https://hal.science/hal-03356261v1/file/icra_2021.pdf" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
+      </a>
+      
 
-    
-        <i>IEEE International Conference on Robotics and Automation (ICRA)</i>,
-        
-        
-    
-    
-    
-    2022.
+      
 
-    <br />
+      
+      <a href="https://peertube.laas.fr/w/17uzneDe7QVAZs5ePc8WKM" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      
 
-    
+      
+      <a href="https://github.com/amitparag/Kuka-arm-DvP" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Code
+      </a>
+      
+
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="The recent successes in deep reinforcement learning largely rely on the capabilities of generating masses of data, which in turn implies the use of a simulator. In particular, current progress in multi body dynamic simulators are under-pinning the implementation of reinforcement learning for end-to-end control of robotic systems. Yet simulators are mostly considered as black boxes while we have the knowledge to make them produce a richer information. In this paper, we are proposing to use the derivatives of the simulator to help with the convergence of the learning. For that, we combine model-based trajectory optimization to produce informative trials using 1st- and 2nd-order simulation derivatives. These locally-optimal runs give fair estimates of the value function and its derivatives, that we use to accelerate the convergence of the critics using Sobolev learning. We empirically demonstrate that the algorithm leads to a faster and more accurate estimation of the value function. The resulting value estimate is used in model-predictive controller as a proxy for shortening the preview horizon. We believe that it is also a first step toward superlinear reinforcement learning algorithm using simulation derivatives, that we need for end-to-end legged locomotion.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{Parag2022,
   author = {Parag, Amit and Kleff, S{\'{e}}bastien and Saci, Léo and Mansard, Nicolas and Stasse, Olivier},
   journal = {IEEE International Conference on Robotics and Automation (ICRA)},
   title = {Value learning from trajectory optimization and Sobolev descent: A step toward reinforcement learning with superlinear convergence properties},
   year = {2022},
+  paper_url = {https://hal.science/hal-03356261v1/file/icra_2021.pdf},
+  video_url = {https://peertube.laas.fr/w/17uzneDe7QVAZs5ePc8WKM},
+  code_url = {https://github.com/amitparag/Kuka-arm-DvP},
   note = {\textcolor{blue}{\textbf{Contribution} : I conducted the experimental validation, which includes providing optimal control problems on a manipulator, designing a scalable sampling strategy, training the Sobolev network, and producing figures. I also actively contributed to the paper writing and to the production of the accompanying video
-  }}
+                 }}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/Parag2022.html" class="btn_bib btn btn-sm">Details</a>
-
-    
+    </div>
   </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+</li></li>
+<li><li id="bib-KleffHumanoids22">
+  <div class="bib-entry-container">
+    
+    <div class="bib-icon">
+      <img src="/images/icons/KleffHumanoids22.png" alt="KleffHumanoids22 icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      <strong>Sébastien Kleff</strong>,
+      
+      
+      
+      
+      
+      
+      
+      J.
+      
+      Carpentier,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Mansard,
+      
+      
+      
+      
+      
+      
+      
+      L.
+      
+      Righetti,
+      
+      
 
-<!-- 
-   -->
-  
-  
+      
+      "On the Derivation of the Contact Dynamics in Arbitrary Frames (Application to Polishing with Talos)",
+      
 
-  
+      
+      <i>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</i>,
+      
+      
+      
+      
+      
+      2022.
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/KleffHumanoids22.png" alt="KleffHumanoids22 icon" />
-  </div>
-  <div class="bib-text">
-      
-      
-      
-        <strong>Sébastien Kleff</strong>,
-      
-    
-      
-      
-      
-        
-        
-          J.
-        
-        Carpentier,
-      
-    
-      
-      
-      
-        
-        
-          N.
-        
-        Mansard,
-      
-    
-      
-      
-      
-        
-        
-          L.
-        
-        Righetti,
-      
-    
+      <br />
 
-    
-    "On the Derivation of the Contact Dynamics in Arbitrary Frames (Application to Polishing with Talos)",
-    
+      
+      <a href="https://hal.science/hal-03758989/file/HUMANOIDS_2022_FINAL.pdf" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
+      </a>
+      
 
-    
-        <i>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</i>,
-        
-        
-    
-    
-    
-    2022.
+      
 
-    <br />
+      
+      <a href="https://www.youtube.com/watch?v=5pMWWsgXKe0" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      
 
-    
+      
+      <a href="https://github.com/MeMory-of-MOtion/sobec" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Code
+      </a>
+      
+
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="Contact dynamics relies on the simultaneous satisfaction of constraints at the robot body level and at the contact level. At both levels, various formulations can be chosen that all must lead to the same results, given the same hypothesis, hence the little importance of their details. Yet when using it in an optimal control problem, a particular formulation is often imposed by the task to be performed by the robot. In this paper, we detail the formulation of the contact quantities (force, movement) in an arbitrary frame imposed by the task. In that case, we will show that we are typically not interested in working in the local frame (attached to the robot contact point), nor in the world frame, but in a user-defined frame centered at the contact location with a fixed orientation in the world. The derivations can then be used for 6D, 3D or normal (pure-sliding) contact. We implemented the corresponding derivatives on top of the contact dynamics of the rigid-body dynamics library Pinocchio in the optimal control solver Crocoddyl. We show that a unique formulation is able to handle several operational orientations, by achieving several surfacing tasks in model predictive control with the robot Talos.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{KleffHumanoids22,
   author = {Kleff, S{\'{e}}bastien and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic},
   title = {{On the Derivation of the Contact Dynamics in Arbitrary Frames (Application to Polishing with Talos)}},
   url = {https://hal.archives-ouvertes.fr/hal-03758989},
   journal = {IEEE-RAS International Conference on Humanoid Robots (Humanoids)},
-  year = {2022}
+  year = {2022},
+  paper_url = {https://hal.science/hal-03758989/file/HUMANOIDS_2022_FINAL.pdf},
+  video_url = {https://www.youtube.com/watch?v=5pMWWsgXKe0},
+  code_url = {https://github.com/MeMory-of-MOtion/sobec}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/KleffHumanoids22.html" class="btn_bib btn btn-sm">Details</a>
-
+    </div>
+  </div>
+</li></li>
+<li><li id="bib-KleffIROS22">
+  <div class="bib-entry-container">
     
-      <a href="https://hal.archives-ouvertes.fr/hal-03758989">
-        <i class="bi bi-link-45deg"></i>
+    <div class="bib-icon">
+      <img src="/images/icons/KleffIROS22.png" alt="KleffIROS22 icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      <strong>Sébastien Kleff</strong>,
+      
+      
+      
+      
+      
+      
+      
+      E.
+      
+      Dantec,
+      
+      
+      
+      
+      
+      
+      
+      G.
+      
+      Saurel,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Mansard,
+      
+      
+      
+      
+      
+      
+      
+      L.
+      
+      Righetti,
+      
+      
+
+      
+      "Introducing Force Feedback in Model Predictive Control",
+      
+
+      
+      <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>,
+      
+      
+      
+      
+      
+      2022.
+
+      <br />
+
+      
+      <a href="https://hal.science/hal-03594295/document" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
       </a>
-    
-  </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+      
 
-<!-- 
-   -->
-  
-  
+      
 
-  
+      
+      <a href="https://www.youtube.com/watch?v=EErwxOrCnnQ" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/KleffIROS22.png" alt="KleffIROS22 icon" />
-  </div>
-  <div class="bib-text">
       
-      
-      
-        <strong>Sébastien Kleff</strong>,
-      
-    
-      
-      
-      
-        
-        
-          E.
-        
-        Dantec,
-      
-    
-      
-      
-      
-        
-        
-          G.
-        
-        Saurel,
-      
-    
-      
-      
-      
-        
-        
-          N.
-        
-        Mansard,
-      
-    
-      
-      
-      
-        
-        
-          L.
-        
-        Righetti,
-      
-    
 
-    
-    "Introducing Force Feedback in Model Predictive Control",
-    
-
-    
-        <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>,
-        
-        
-    
-    
-    
-    2022.
-
-    <br />
-
-    
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="In the literature about model predictive control (MPC), contact forces are planned rather than controlled. In this paper, we propose a novel paradigm to incorporate effort measurements into a predictive controller, hence allowing to control them by direct measurement feedback. We first demonstrate why the classical optimal control formulation, based on position and velocity state feedback, cannot handle direct feedback on force information. Following previous approaches in force control, we then propose to augment the classical formulations with a model of the robot actuation, which naturally allows to generate online trajectories that adapt to sensed position, velocity and torques. We propose a complete implementation of this idea on the upper part of a real humanoid robot, and show through hardware experiments that this new formulation incorporating effort feedback outperforms classical MPC in challenging tasks where physical interaction with the environment is crucial.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{KleffIROS22,
   author = {Kleff, S{\'{e}}bastien and Dantec, Ewen and Saurel, Guilhem and Mansard, Nicolas and Righetti, Ludovic},
   title = {{Introducing Force Feedback in Model Predictive Control}},
   url = {https://hal.archives-ouvertes.fr/hal-03594295},
   journal = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  year = {2022}
+  year = {2022},
+  paper_url = {https://hal.science/hal-03594295/document},
+  video_url = {https://www.youtube.com/watch?v=EErwxOrCnnQ}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/KleffIROS22.html" class="btn_bib btn btn-sm">Details</a>
-
+    </div>
+  </div>
+</li></li>
+<li><li id="bib-Gazar22">
+  <div class="bib-entry-container">
     
-      <a href="https://hal.archives-ouvertes.fr/hal-03594295">
-        <i class="bi bi-link-45deg"></i>
+    <div class="bib-icon">
+      <img src="/images/icons/Gazar22.png" alt="Gazar22 icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      
+      
+      A.
+      
+      Gazar,
+      
+      
+      
+      
+      
+      
+      
+      M.
+      
+      Khadiv,
+      
+      
+      
+      
+      
+      <strong>Sébastien Kleff</strong>,
+      
+      
+      
+      
+      
+      
+      
+      A.
+      
+      D.
+      
+      Prete,
+      
+      
+      
+      
+      
+      
+      
+      L.
+      
+      Righetti,
+      
+      
+
+      
+      "Nonlinear stochastic trajectory optimization for centroidal momentum motion generation of legged robots",
+      
+
+      
+      <i>The International Symposium of Robotics Research, ISR 2022</i>,
+      
+      
+      
+      
+      
+      2022.
+
+      <br />
+
+      
+      <a href="https://arxiv.org/abs/2205.13264" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
       </a>
-    
-  </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+      
 
-<!-- 
-   -->
-  
-  
+      
 
-  
+      
+      <a href="https://www.youtube.com/watch?v=IZPyJZe7UDc" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/Gazar22.png" alt="Gazar22 icon" />
-  </div>
-  <div class="bib-text">
       
-      
-      
-        
-        
-          A.
-        
-        Gazar,
-      
-    
-      
-      
-      
-        
-        
-          M.
-        
-        Khadiv,
-      
-    
-      
-      
-      
-        <strong>Sébastien Kleff</strong>,
-      
-    
-      
-      
-      
-        
-        
-          A.
-        
-          D.
-        
-        Prete,
-      
-    
-      
-      
-      
-        
-        
-          L.
-        
-        Righetti,
-      
-    
 
-    
-    "Nonlinear stochastic trajectory optimization for centroidal momentum motion generation of legged robots",
-    
-
-    
-        <i>The International Symposium of Robotics Research, ISR 2022</i>,
-        
-        
-    
-    
-    
-    2022.
-
-    <br />
-
-    
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="Generation of robust trajectories for legged robots remains a challenging task due to the underlying nonlinear, hybrid and intrinsically unstable dynamics which needs to be stabilized through limited contact forces. Furthermore, disturbances arising from unmodelled contact interactions with the environment and model mismatches can hinder the quality of the planned trajectories leading to unsafe motions. In this work, we propose to use stochastic trajectory optimization for generating robust centroidal momentum trajectories to account for additive uncertainties on the model dynamics and parametric uncertainties on contact locations. Through an alternation between the robust centroidal and whole-body trajectory optimizations, we generate robust momentum trajectories while being consistent with the whole-body dynamics. We perform an extensive set of simulations subject to different uncertainties on a quadruped robot showing that our stochastic trajectory optimization problem reduces the amount of foot slippage for different gaits while achieving better performance over deterministic planning.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{Gazar22,
   author = {Gazar, Ahmad and Khadiv, Majid and Kleff, S{\'{e}}bastien and Prete, Andrea Del and Righetti, Ludovic},
   journal = {The International Symposium of Robotics Research, ISR 2022},
   title = {{Nonlinear stochastic trajectory optimization for centroidal momentum motion generation of legged robots}},
-  year = {2022}
+  year = {2022},
+  paper_url = {https://arxiv.org/abs/2205.13264},
+  video_url = {https://www.youtube.com/watch?v=IZPyJZe7UDc}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/Gazar22.html" class="btn_bib btn btn-sm">Details</a>
-
-    
+    </div>
   </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+</li></li>
+<li><li id="bib-KleffICRA21">
+  <div class="bib-entry-container">
+    
+    <div class="bib-icon">
+      <img src="/images/icons/KleffICRA21.png" alt="KleffICRA21 icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      <strong>Sébastien Kleff</strong>,
+      
+      
+      
+      
+      
+      
+      
+      A.
+      
+      Meduri,
+      
+      
+      
+      
+      
+      
+      
+      R.
+      
+      Budhiraja,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Mansard,
+      
+      
+      
+      
+      
+      
+      
+      L.
+      
+      Righetti,
+      
+      
 
-<!-- 
-   -->
-  
-  
+      
+      "High-Frequency Nonlinear Model Predictive Control of a Manipulator",
+      
 
-  
+      
+      <i>IEEE International Conference on Robotics and Automation (ICRA)</i>,
+      
+      
+      
+      
+      
+      2021.
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/KleffICRA21.png" alt="KleffICRA21 icon" />
-  </div>
-  <div class="bib-text">
-      
-      
-      
-        <strong>Sébastien Kleff</strong>,
-      
-    
-      
-      
-      
-        
-        
-          A.
-        
-        Meduri,
-      
-    
-      
-      
-      
-        
-        
-          R.
-        
-        Budhiraja,
-      
-    
-      
-      
-      
-        
-        
-          N.
-        
-        Mansard,
-      
-    
-      
-      
-      
-        
-        
-          L.
-        
-        Righetti,
-      
-    
+      <br />
 
-    
-    "High-Frequency Nonlinear Model Predictive Control of a Manipulator",
-    
+      
+      <a href="https://hal.science/hal-02993058v1/file/ICRA21_skleff.pdf" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
+      </a>
+      
 
-    
-        <i>IEEE International Conference on Robotics and Automation (ICRA)</i>,
-        
-        
-    
-    
-    
-    2021.
+      
 
-    <br />
+      
+      <a href="https://www.youtube.com/watch?v=5pMWWsgXKe0" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+      
 
-    
+      
+
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="Model Predictive Control (MPC) promises to endow robots with enough reactivity to perform complex tasks in dynamic environments by frequently updating their motion plan based on measurements. Despite its appeal, it has seldom been deployed on real machines because of scaling constraints. This paper presents the first hardware implementation of closed-loop nonlinear MPC on a 7-DoF torque-controlled robot. Our controller leverages a state-of-the art optimal control solver, namely Differential Dynamic Programming (DDP), in order to replan state and control trajectories at real-time rates (1kHz). In addition to this experimental proof of concept, an exhaustive performance analysis shows that our controller outperforms open-loop MPC on a rapid cyclic end-effector task. We also exhibit the importance of a sufficient preview horizon and full robot dynamics through comparisons with inverse dynamics and kinematic optimization.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{KleffICRA21,
   author = {Kleff, S{\'{e}}bastien and Meduri, Avadesh and Budhiraja, Rohan and Mansard, Nicolas and Righetti, Ludovic},
   title = {{High-Frequency Nonlinear Model Predictive Control of a Manipulator}},
   url = {https://hal.archives-ouvertes.fr/hal-02993058},
   journal = {IEEE International Conference on Robotics and Automation (ICRA)},
-  year = {2021}
+  year = {2021},
+  paper_url = {https://hal.science/hal-02993058v1/file/ICRA21_skleff.pdf},
+  video_url = {https://www.youtube.com/watch?v=5pMWWsgXKe0}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/KleffICRA21.html" class="btn_bib btn btn-sm">Details</a>
-
+    </div>
+  </div>
+</li></li>
+<li><li id="bib-KleffRobotica20">
+  <div class="bib-entry-container">
     
-      <a href="https://hal.archives-ouvertes.fr/hal-02993058">
-        <i class="bi bi-link-45deg"></i>
+    <div class="bib-icon">
+      <img src="/images/icons/KleffRobotica20.png" alt="KleffRobotica20 icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      <strong>Sébastien Kleff</strong>,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Li,
+      
+      
+
+      
+      "Robust Motion Planning in Dynamic Environments Based on Sampled-Data Hamilton-Jacobi Reachability",
+      
+
+      
+      <i>Robotica</i>,
+      
+      
+      
+      
+      
+      2020.
+
+      <br />
+
+      
+      <a href="https://www.researchgate.net/profile/Sebastien-Kleff/publication/339273735_Robust_Motion_Planning_in_Dynamic_Environments_Based_on_Sampled-Data_Hamilton-Jacobi_Reachability/links/60f545890859317dbdf21e26/Robust-Motion-Planning-in-Dynamic-Environments-Based-on-Sampled-Data-Hamilton-Jacobi-Reachability.pdf" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
       </a>
-    
-  </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+      
 
-<!-- 
-   -->
-  
-  
+      
 
-  
+      
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/KleffRobotica20.png" alt="KleffRobotica20 icon" />
-  </div>
-  <div class="bib-text">
       
-      
-      
-        <strong>Sébastien Kleff</strong>,
-      
-    
-      
-      
-      
-        
-        
-          N.
-        
-        Li,
-      
-    
 
-    
-    "Robust Motion Planning in Dynamic Environments Based on Sampled-Data Hamilton-Jacobi Reachability",
-    
-
-    
-        <i>Robotica</i>,
-        vol. 38,
-        no. 12,
-    
-    
-    
-    2020.
-
-    <br />
-
-    
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="We propose a novel formal approach to robust motion planning (MP) in dynamic environments based on reachability analysis. While traditional MP methods usually fail to provide formal robust safety and performance guarantees, our approach provably ensures safe task achievement in time-varying and adversarial environments under parametric uncertainty. We leverage recent results on Hamilton–Jacobi (HJ) reachability and differential games in order to compute offline guaranteed motion plans that are compatible with the sampled-data (SD) paradigm. Also, we synthesize online provably robust safety-preserving and target-reaching feedback controls. Unlike earlier applications of reachability analysis to MP, our methodology handles arbitrary time-varying constraints, adversarial agents such as pursuing obstacles or evading targets, and takes into account the robot’s configuration. Furthermore, we use HJ projections in order to reduce significantly the computational burden without trading off safety guarantees. The validity of this approach is demonstrated through the case study of a robot arm subject to measurement errors, which is tasked with safely reaching a goal in a known time-varying workspace while avoiding capture by an unpredictable pursuer. Finally, the performance of the approach and research perspectives are discussed.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{KleffRobotica20,
   author = {Kleff, S{\'{e}}bastien and Li, Ning},
   doi = {10.1017/S0263574719001905},
   journal = {Robotica},
   keywords = {Hamilton-Jacobi-Isaacs Equation,Reach-avoid game,Reachability analysis,Robust motion planning,Sampled-data system},
-  number = {12},
   title = {{Robust Motion Planning in Dynamic Environments Based on Sampled-Data Hamilton-Jacobi Reachability}},
-  volume = {38},
+  paper_url = {https://www.researchgate.net/profile/Sebastien-Kleff/publication/339273735_Robust_Motion_Planning_in_Dynamic_Environments_Based_on_Sampled-Data_Hamilton-Jacobi_Reachability/links/60f545890859317dbdf21e26/Robust-Motion-Planning-in-Dynamic-Environments-Based-on-Sampled-Data-Hamilton-Jacobi-Reachability.pdf},
   year = {2020}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/KleffRobotica20.html" class="btn_bib btn btn-sm">Details</a>
-
-    
+    </div>
   </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+</li></li>
+<li><li id="bib-KleffCCDC2018">
+  <div class="bib-entry-container">
+    
+    <div class="bib-icon">
+      <img src="/images/icons/KleffCCDC2018.png" alt="KleffCCDC2018 icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      <strong>Sébastien Kleff</strong>,
+      
+      
+      
+      
+      
+      
+      
+      N.
+      
+      Li,
+      
+      
 
-<!-- 
-   -->
-  
-  
+      
+      "A sampled-data Hamilton-Jacobi reachability approach to safe and robust motion planning",
+      
 
-  
+      
+      <i>Chinese Control And Decision Conference (CCDC)</i>,
+      
+      
+      
+      
+      
+      2018.
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/KleffCCDC2018.png" alt="KleffCCDC2018 icon" />
-  </div>
-  <div class="bib-text">
-      
-      
-      
-        <strong>Sébastien Kleff</strong>,
-      
-    
-      
-      
-      
-        
-        
-          N.
-        
-        Li,
-      
-    
+      <br />
 
-    
-    "A sampled-data Hamilton-Jacobi reachability approach to safe and robust motion planning",
-    
+      
 
-    
-        <i>2018 Chinese Control And Decision Conference (CCDC)</i>,
-        
-        
-    
-    
-    
-    2018.
+      
 
-    <br />
+      
 
-    
+      
+
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="Reachability analysis provides safety guarantees for state-constrained control systems, which makes it an attractive tool to address motion planning problems, but there are still few applications in cluttered environments. In this paper, a Hamilton-Jacobi reachability based formulation of the motion planning problem in both static and dynamic environments for sampled-data systems is proposed. Also, a robust safety-preserving and target-reaching sampled-data feedback controller is synthesized. We use an existing sampled-data reachability algorithm to compute robust reach- avoid tubes and formally extend it to the state-time space in order to deal with moving target and obstacles. The validity of this approach is eventually demonstrated through simulations in two simple scenarios and the results are discussed.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{KleffCCDC2018,
   author = {Kleff, S{\'{e}}bastien and Li, Ning},
   doi = {10.1109/CCDC.2018.8407709},
-  journal = {2018 Chinese Control And Decision Conference (CCDC)},
+  journal = {Chinese Control And Decision Conference (CCDC)},
   title = {{A sampled-data Hamilton-Jacobi reachability approach to safe and robust motion planning}},
-  url = {https://ieeexplore.ieee.org/document/8407709/},
+  url = {https://www.researchgate.net/profile/Sebastien-Kleff/publication/326704310_A_sampled-data_Hamilton-Jacobi_reachability_approach_to_safe_and_robust_motion_planning/links/5baaea6592851ca9ed25e696/A-sampled-data-Hamilton-Jacobi-reachability-approach-to-safe-and-robust-motion-planning.pdf},
   year = {2018}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/KleffCCDC2018.html" class="btn_bib btn btn-sm">Details</a>
-
+    </div>
+  </div>
+</li></li>
+<li><li id="bib-Khadiv2017">
+  <div class="bib-entry-container">
     
-      <a href="https://ieeexplore.ieee.org/document/8407709/">
-        <i class="bi bi-link-45deg"></i>
+    <div class="bib-icon">
+      <img src="/images/icons/Khadiv2017.png" alt="Khadiv2017 icon" />
+    </div>
+    <div class="bib-number">[]</div>
+    <div class="bib-text">
+      
+      
+      
+      
+      
+      M.
+      
+      Khadiv,
+      
+      
+      
+      
+      
+      <strong>Sébastien Kleff</strong>,
+      
+      
+      
+      
+      
+      
+      
+      A.
+      
+      Herzog,
+      
+      
+      
+      
+      
+      
+      
+      S.
+      
+      A.
+      
+      A.
+      
+      Moosavian,
+      
+      
+      
+      
+      
+      
+      
+      S.
+      
+      Schaal,
+      
+      
+      
+      
+      
+      
+      
+      L.
+      
+      Righetti,
+      
+      
+
+      
+      "Stepping stabilization using a combination of DCM tracking and step adjustment",
+      
+
+      
+      <i>4th RSI International Conference on Robotics and Mechatronics, ICRoM 2016</i>,
+      
+      
+      
+      
+      
+      2016.
+
+      <br />
+
+      
+      <a href="https://arxiv.org/pdf/1609.09822" class="btn_bib btn btn-sm" target="_blank" rel="noopener noreferrer">
+        Paper
       </a>
-    
-  </div>
-</div>
-</div>
-</li>
-<li><div class="container" style="max-width: 900px; margin: 0 auto;">
+      
 
-<!-- 
-   -->
-  
-  
+      
 
-  
+      
 
-<div class="bib-entry">
-  
-  <div class="bib-icon">
-    <img src="/images/icons/Khadiv2017.png" alt="Khadiv2017 icon" />
-  </div>
-  <div class="bib-text">
       
-      
-      
-        
-        
-          M.
-        
-        Khadiv,
-      
-    
-      
-      
-      
-        <strong>Sébastien Kleff</strong>,
-      
-    
-      
-      
-      
-        
-        
-          A.
-        
-        Herzog,
-      
-    
-      
-      
-      
-        
-        
-          S.
-        
-          A.
-        
-          A.
-        
-        Moosavian,
-      
-    
-      
-      
-      
-        
-        
-          S.
-        
-        Schaal,
-      
-    
-      
-      
-      
-        
-        
-          L.
-        
-        Righetti,
-      
-    
 
-    
-    "Stepping stabilization using a combination of DCM tracking and step adjustment",
-    
-
-    
-        <i>4th RSI International Conference on Robotics and Mechatronics, ICRoM 2016</i>,
-        
-        
-    
-    
-    
-    2017.
-
-    <br />
-
-    
+      
       
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="In this paper, a method for stabilizing biped robots stepping by a combination of Divergent Component of Motion (DCM) tracking and step adjustment is proposed. In this method, the DCM trajectory is generated, consistent with the predefined footprints. Furthermore, a swing foot trajectory modification strategy is proposed to adapt the landing point, using DCM measurement. In order to apply the generated trajectories to the full robot, a Hierarchical Inverse Dynamics (HID) is employed. The HID enables us to use different combinations of the DCM tracking and step adjustment for stabilizing different biped robots. Simulation experiments on two scenarios for two different simulated robots, one with active ankles and the other with passive ankles, are carried out. Simulation results demonstrate the effectiveness of the proposed method for robots with both active and passive ankles.">
         Abs
       </button>
-    
+      
 
-    
+      
       <button type="button" class="btn_bib btn btn-sm" data-bs-toggle="popover" data-bs-content="@article{Khadiv2017,
   author = {Khadiv, Majid and Kleff, S{\'{e}}bastien and Herzog, Alexander and Moosavian, S. Ali A. and Schaal, Stefan and Righetti, Ludovic},
   journal = {4th RSI International Conference on Robotics and Mechatronics, ICRoM 2016},
   title = {{Stepping stabilization using a combination of DCM tracking and step adjustment}},
-  year = {2017},
+  year = {2016},
   note = {\textcolor{blue}{\textbf{Contribution} : I designed and implemented a prototype of the proposed approach (the DCM trajectory generation and the whole-body QP formulation) during my undergraduate research internship at the Max Planck Institute
-  }}
+                 }},
+  paper_url = {https://arxiv.org/pdf/1609.09822}
 }
 " data-bs-html="true">
         Bib
       </button>
-    
+      
 
-    <a href="/Khadiv2017.html" class="btn_bib btn btn-sm">Details</a>
-
-    
+    </div>
   </div>
+</li></li></ol>
+  </ol>
 </div>
-</div>
-</li></ol>
-</div>
+
+  <div class="alert alert-info" style="margin-bottom: 24px;">
+    <span style="font-size: 1.1em;">Authors marked with <strong>*</strong> contributed equally to this work.</span>
+  </div>
 </div>
 
 
@@ -1472,7 +1698,7 @@ Our up-to-date publication list is also available on <a href="https://scholar.go
 
 <div class="page__footer-copyright">
   &copy; 2025 Sébastien Kleff, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-11-30
+  Site last updated 2025-12-27
 </div>
 
       </footer>
