@@ -11,6 +11,16 @@
   abstract  = {The promise of model-predictive control (MPC) in robotics has led to extensive development of efficient numerical optimal control solvers in line with differential dynamic programming because it exploits the sparsity induced by time. In this work, we argue that this effervescence has hidden the fact that sparsity can be equally exploited by standard nonlinear optimization. In particular, we show how a tailored implementation of sequential quadratic programming (QP) achieves state-of-the-art MPC. Then, we clarify the connections between popular algorithms from the robotics community and well-established optimization techniques. Further, the sequential quadratic program formulation naturally encompasses the constrained case, a notoriously difficult problem in the robotics community. Specifically, we show that it only requires a sparsity-exploiting implementation of a state-of-the-art QP solver. We illustrate the validity of this approach in a comparative study and experiments on a torque-controlled manipulator. To the best of our knowledge, this is the first demonstration of closed loop nonlinear MPC with constraints on a real robot.}
 }
 
+@article{KleffTactile,
+  author       = {S{\'{e}}bastien Kleff and Lucas Joseph and Vincent Padois},
+  title        = {{A Unified Tactile Servoing Framework based on Hybrid Force-Position Control}},
+  journal      = {Preprint},
+  year         = {2025},
+  preprint_url = {https://hal.science/hal-05441031/document},
+  video_url    = {https://youtu.be/1CuvFp01xIo},
+  abstract     = {In robotics, traditional force control lacks local contact information. Tactile sensors provide rich feedback on physical interaction, but remain notably difficult to integrate into real-time control loops. This paper proposes a unified tactile servoing formulation that allows explicit control of contact pose and force at the Center of Pressure (CoP). Unlike conventional tactile servoing techniques, which are tightly coupled to a specific sensor and often treat the contact wrench as disturbance to be rejected, our approach relies on a generic and physically grounded feature space. We derive a hybrid force-position control law based on the Jacobian at the CoP that naturally decouples force and motion subspaces, ensuring geometric consistency during the contact interaction. Our framework, validated on a robotic manipulator with visionbased tactile sensing, demonstrates robust contact maintenance and force tracking capabilities, outperforming standard imagebased and pose-based controllers in tasks requiring precise regulation of the physical interaction.}
+}
+
 @article{KleffTRO,
   author       = {S{\'{e}}bastien Kleff and Armand Jordana and Mansard, Nicolas and Righetti, Ludovic},
   title        = {{Force Feedback Model Predictive Control: A Soft Contact Approach}},

@@ -16,7 +16,7 @@ During my PhD, I proposed explored different ways to explain and bridge this cri
 </p>
 
 <p>
-The idea approach I investigated during my PhD was to model the actuation dynamics in order to include joint torque measurement feedback <a href="#bib-KleffIROS22">[1]</a>. This formulation has the avantage of not requiring additional sensors on torque-controlled robots while increasing the force control performance in dynamic contact tasks w.r.t. the standard MPC formulation.
+The first idea I investigated during my PhD was to model the actuation dynamics in order to include joint torque measurement feedback <a href="#bib-KleffIROS22">[1]</a>. This formulation has the avantage of not requiring additional sensors on torque-controlled robots while increasing the force control performance in dynamic contact tasks w.r.t. the standard MPC formulation.
 </p>
 
 <p>
@@ -24,7 +24,7 @@ Another idea relied on direct force modeling as a visco-elastic phenomena. This 
 </p>
 
 <p>
-I also investigated another solution in collaboration with <a href="https://scholar.google.com/citations?user=zLICCioAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Armand Jordana</a>, that relied on online estimation of the contact force modeling error in a disturbance-observer-like fashion <a href="#bib-JordanaICRA24">[3]</a>. This simple formulation allowed surprisingly good performance compared in force tasks.
+I also investigated another solution in collaboration with <a href="https://scholar.google.com/citations?user=zLICCioAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Armand Jordana</a>, that relied on online estimation of the contact force modeling error in a disturbance-observer-like fashion <a href="#bib-JordanaICRA24">[3]</a>. This simple formulation allowed surprisingly good performance.
 </p>
 
 
