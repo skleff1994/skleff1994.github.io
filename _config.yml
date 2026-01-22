@@ -23,7 +23,7 @@ repository               : "skleff1994/skleff1994.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_seb.jpeg"
+  avatar           : "skleff_picture.jpeg"
   name             : "Sébastien Kleff"
   pronouns         : # example: "she/her"  
   bio              : "Postdoctoral researcher at Inria"
