@@ -88,6 +88,7 @@ I also contributed to pushing the limits of MPC, by investigating how the Value 
         <br>
         <a href="https://hal.science/hal-02993058v1/file/ICRA21_skleff.pdf" class="btn_bib btn btn-sm" target="_blank">Paper</a>
         <a href="https://www.youtube.com/watch?v=5pMWWsgXKe0" class="btn_bib btn btn-sm" target="_blank">Video</a>
+        <a href="https://github.com/machines-in-motion/ddp_mpc" class="btn_bib btn btn-sm" target="_blank">Code</a>
       </div>
     </li>
     
