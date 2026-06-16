@@ -41,10 +41,10 @@ My current research focuses on integrating tactile information into model-based 
       <span class="bib-number">[1]</span>
       <div class="bib-content">
         <strong>S. Kleff</strong>, L. Joseph, V. Padois,
-        "A Unified Tactile Servoing Framework based on Hybrid Force-Position Control",
-        <em>Preprint</em>, 2025.
+        "Geometrically Consistent Tactile Servoing via Hybrid Force-Position Control at the Center of Pressure",
+        <em>IEEE Robotics and Automation Letters</em>, 2026.
         <br>
-        <a href="https://hal.science/hal-05441031/document" class="btn_bib btn btn-sm" target="_blank">Preprint</a>
+        <a href="https://hal.science/hal-05441031/document" class="btn_bib btn btn-sm" target="_blank">Paper</a>
         <a href="https://youtu.be/1CuvFp01xIo" class="btn_bib btn btn-sm" target="_blank">Video</a>
       </div>
     </li>
