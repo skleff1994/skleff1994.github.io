@@ -238,6 +238,7 @@ scholar:
   order: descending
   source: ./_bibliography
   bibliography: all.bib
+  bibtex_skip_fields: [abstract, month_numeric, paper_url, preprint_url, video_url, code_url]
 # Sass/SCSS
 sass:
   sass_dir: _sass

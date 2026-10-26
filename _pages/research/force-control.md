@@ -33,7 +33,11 @@ Formulating force tasks in arbiratry frames also required to derive contact dyna
 </p>
 
 <p>
-The force feedback MPC formulation has also been used in combination with higher level planning to achieve challenging industrial tasks such as deburring <a href="#bib-WojciechowskiDeburring">[5]</a>.
+The force feedback MPC formulation has also been used in combination with higher level planning to achieve challenging industrial tasks such as deburring <a href="#bib-WojciechowskiDeburring">[5]</a>, and combined with diffusion-based motion priors for contact-rich industrial tasks <a href="#bib-GursoyDiffusion">[6]</a>.
+</p>
+
+<p>
+Force-aware nonlinear MPC is also being applied to human–aerial robot collaborative transportation <a href="#bib-SoueidanICRA27">[7]</a>.
 </p>
 
 <h2 style="padding-top: 20px;">Related Publications</h2>
@@ -74,12 +78,13 @@ The force feedback MPC formulation has also been used in combination with higher
     <li id="bib-KleffTRO">
       <span class="bib-number">[2]</span>
       <div class="bib-content">
-        <strong>S. Kleff</strong>, A. Jordana, N. Mansard, L. Righetti,
+        <strong>S. Kleff</strong>, A. Jordana, R. Khorrambakht, N. Mansard, L. Righetti,
         "Force Feedback Model Predictive Control: A Soft Contact Approach",
-        <em>Preprint</em>, 2025.
+        <em>Under revision for Autonomous Robots</em>, 2026.
         <br>
         <a href="https://hal.science/hal-04572399v2/document" class="btn_bib btn btn-sm" target="_blank">Preprint</a>
         <a href="https://youtu.be/tRDU4Flo7Lg?si=x01E5S3qqQpRtQfQ" class="btn_bib btn btn-sm" target="_blank">Video</a>
+        <a href="https://github.com/machines-in-motion/force_feedback_mpc" class="btn_bib btn btn-sm" target="_blank">Code</a>
       </div>
     </li>
     <li id="bib-JordanaICRA24">
@@ -109,13 +114,29 @@ The force feedback MPC formulation has also been used in combination with higher
     <li id="bib-WojciechowskiDeburring">
       <span class="bib-number">[5]</span>
       <div class="bib-content">
-      K. Wojciechowski, E. Gursoy, A. Haffemayer, <strong>S. Kleff</strong>, V. Bonnet, F. Lamiraux, N. Mansard
+      K. Wojciechowski, E. Gursoy, A. Haffemayer, <strong>S. Kleff</strong>, V. Bonnet, F. Lamiraux, N. Mansard,
         "Learning-Guided Force-Feedback Model Predictive Control with Obstacle Avoidance for Robotic Deburring",
-        <em>Preprint</em>, 2025.
+        <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2026.
         <br>
         <a href="https://hal.science/hal-05320433v1/file/deburring_paper-4.pdf" class="btn_bib btn btn-sm" target="_blank">Paper</a>
         <a href="https://peertube.laas.fr/w/oY2KeZcjdsmfywg5aH3y34" class="btn_bib btn btn-sm" target="_blank">Video</a>
         <a href="https://github.com/agimus-project/agimus-demos/tree/humble-devel" class="btn_bib btn btn-sm" target="_blank">Code</a>
+      </div>
+    </li>
+    <li id="bib-GursoyDiffusion">
+      <span class="bib-number">[6]</span>
+      <div class="bib-content">
+        E. Gursoy*, K. Wojciechowski*, M. Fourmy, A. Haffemayer, <strong>S. Kleff</strong>, V. Petrik, J. Cavalcanti Santos, V. Bonnet, N. Mansard,
+        "Force-Feedback Model Predictive Control with Diffusion Motion Priors for Contact-Rich Industrial Tasks",
+        <em>In preparation</em>, 2026.
+      </div>
+    </li>
+    <li id="bib-SoueidanICRA27">
+      <span class="bib-number">[7]</span>
+      <div class="bib-content">
+        J. Soueidan, <strong>S. Kleff</strong>, P. Fraisse, M. Cognetti,
+        "Force-Aware Incremental NMPC for Position-Independent Human-Aerial Robot Collaborative Transportation",
+        <em>Submitted to IEEE International Conference on Robotics and Automation (ICRA)</em>, 2027.
       </div>
     </li>
   </ol>

@@ -5,6 +5,11 @@ permalink: /cv-page/
 description: Curriculum Vitae of Sébastien Kleff
 nav_bar: true
 nav_order: 6
+redirect_from:
+  - /cv/
+  - /resume
+  - /cv-json/
+  - /resume-json
 ---
 
 <div class="container" style="max-width: 900px; margin: 0 auto; padding-left: 24px; padding-right: 24px;">

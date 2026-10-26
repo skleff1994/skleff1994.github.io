@@ -16,7 +16,9 @@ I am actively involved in developing open-source software for robotics research,
 ======
 
 ### mim_solvers -->
-I am one of the main developers and managers of the <a href="https://github.com/machines-in-motion/mim_solvers" target="_blank" rel="noopener noreferrer">mim_solvers</a> library, an efficient numerical optimization solver tailored for nonlinear Model-Predictive Control, compatible with the <a href="https://github.com/loco-3d/crocoddyl" target="_blank" rel="noopener noreferrer">Crocoddyl</a> library.
+I am one of the main developers and managers of the <a href="https://github.com/machines-in-motion/mim_solvers" target="_blank" rel="noopener noreferrer">mim_solvers</a> library, an efficient numerical optimization solver tailored for nonlinear Model-Predictive Control, compatible with the <a href="https://github.com/loco-3d/crocoddyl" target="_blank" rel="noopener noreferrer">Crocoddyl</a> library. It enables real-time constrained MPC on manipulators, quadrupeds, humanoids and drones, is used by 20+ researchers across several groups, and supported the EU project AGIMUS.
+
+I am also the main developer of <a href="https://github.com/machines-in-motion/force_feedback_mpc" target="_blank" rel="noopener noreferrer">force_feedback_mpc</a>, the first experimentally validated implementation of force-feedback MPC on modern manipulators, interfaced with Crocoddyl and used in the EU project AGIMUS for industrial deburring and polishing tasks. The companion repository <a href="https://github.com/machines-in-motion/force_feedback_dgh" target="_blank" rel="noopener noreferrer">force_feedback_dgh</a> provides real-time deployment code for the Kuka iiwa.
 
 <!-- **Key Features:**
 * High-performance numerical optimization for MPC

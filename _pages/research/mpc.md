@@ -87,7 +87,6 @@ I also contributed to pushing the limits of MPC, by investigating how the Value 
         <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2021.
         <br>
         <a href="https://hal.science/hal-02993058v1/file/ICRA21_skleff.pdf" class="btn_bib btn btn-sm" target="_blank">Paper</a>
-        <a href="https://www.youtube.com/watch?v=5pMWWsgXKe0" class="btn_bib btn btn-sm" target="_blank">Video</a>
         <a href="https://github.com/machines-in-motion/ddp_mpc" class="btn_bib btn btn-sm" target="_blank">Code</a>
       </div>
     </li>
@@ -96,7 +95,7 @@ I also contributed to pushing the limits of MPC, by investigating how the Value 
       <span class="bib-number">[4]</span>
       <div class="bib-content">
         A. Parag, <strong>S. Kleff</strong>, L. Saci, N. Mansard, O. Stasse,
-        "Value learning from trajectory optimization and Sobolev descent: A step toward reinforcement learning with superlinear convergence properties",
+        "Value Learning from Trajectory Optimization and Sobolev Descent: A Step Toward Reinforcement Learning with Superlinear Convergence Properties",
         <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2022.
         <br>
         <a href="https://hal.science/hal-03356261v1/file/icra_2021.pdf" class="btn_bib btn btn-sm" target="_blank">Paper</a>
